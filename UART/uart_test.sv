@@ -19,7 +19,7 @@ bit baudClk;                         // baud clock output
 
 // Loop back serial input and output to easily check tx and rx correctness 
 // When loopback is true ser_in will be assigned serOut 
-parameter loopback = 0; 
+parameter loopback = 1; 
 
 bit ser_In; 
 assign ser_In = (loopback) ? serOut : serIn;
