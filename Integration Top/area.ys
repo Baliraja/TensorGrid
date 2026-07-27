@@ -1,0 +1,105 @@
+#---------------------------------------------------------
+# Read RTL
+#---------------------------------------------------------
+read_verilog uartTopBaseExt.v
+read_verilog uart_tx.v
+read_verilog uart_rx.v
+read_verilog uart_baud_gen.v
+
+read_verilog -sv command_parser.sv
+read_verilog -sv integration_minus_UART.sv
+read_verilog -sv reg_bank.sv
+read_verilog -sv MAC_grid.sv
+read_verilog -sv quantizer.sv
+read_verilog -sv int_MAC.sv
+read_verilog -sv integration_final.sv
+
+#---------------------------------------------------------
+# Top Module
+#---------------------------------------------------------
+hierarchy -top integration_final
+
+#---------------------------------------------------------
+# Read Standard Cell Library
+#---------------------------------------------------------
+read_liberty -lib D:/ChipathonTest/integration_final/OPENROAD_flow_scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+
+#---------------------------------------------------------
+# RTL Processing
+#---------------------------------------------------------
+proc
+opt
+check
+
+#---------------------------------------------------------
+# RTL Statistics
+#---------------------------------------------------------
+tee -o reports/pre_synth_stat.txt stat
+
+#---------------------------------------------------------
+# Synthesis
+#---------------------------------------------------------
+synth -top integration_final
+
+opt
+clean
+
+#---------------------------------------------------------
+# Map Flip-Flops
+#---------------------------------------------------------
+dfflibmap -liberty D:/ChipathonTest/integration_final/OPENROAD_flow_scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+
+#---------------------------------------------------------
+# Technology Mapping
+#---------------------------------------------------------
+abc -fast -liberty D:/ChipathonTest/integration_final/OPENROAD_flow_scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+
+opt
+clean
+
+#---------------------------------------------------------
+# Final Checks
+#---------------------------------------------------------
+check
+
+#---------------------------------------------------------
+# Reports
+#---------------------------------------------------------
+
+# General statistics
+tee -o reports/final_stat.txt stat
+
+# Area report
+tee -o reports/area_report.txt stat -liberty D:/ChipathonTest/integration_final/OPENROAD_flow_scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+
+# Design hierarchy
+tee -o reports/hierarchy.txt hierarchy
+
+# Design check report
+tee -o reports/check_report.txt check
+
+#---------------------------------------------------------
+# Output Files
+#---------------------------------------------------------
+
+# Synthesized gate-level netlist
+write_verilog -noattr integration_final_synth.v
+
+# JSON netlist
+write_json integration_final.json
+
+# BLIF (optional)
+write_blif integration_final.blif
+
+# EDIF (optional)
+write_edif integration_final.edif
+
+#---------------------------------------------------------
+# End
+#---------------------------------------------------------
+echo ""
+echo "==========================================="
+echo "Synthesis Completed Successfully"
+echo "Reports saved in ./reports/"
+echo "Gate-level netlist: integration_final_synth.v"
+echo "==========================================="

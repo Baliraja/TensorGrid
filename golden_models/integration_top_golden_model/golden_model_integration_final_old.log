@@ -1,0 +1,126 @@
+2026-07-22 13:03:33,018 [INFO] cocotb: Running tests
+2026-07-22 13:03:33,019 [INFO] cocotb.regression: [34mrunning[49m[39m integration_final_TB.integration_final_cocotb_test (1/1)
+2026-07-22 13:03:33,020 [INFO] test: [TB] Measured ce16 period = 3 clk cycles -> 1 bit = 48 clk cycles
+2026-07-22 13:03:33,021 [INFO] test: === STARTING integration_final VERIFICATION (Cocotb) ===
+2026-07-22 13:03:33,022 [INFO] test: [CASE 1] PASS: expected=01 actual=01
+2026-07-22 13:03:33,023 [INFO] test: [CASE 2] PASS: expected=01 actual=01
+2026-07-22 13:03:33,027 [INFO] test: [CASE 3] PASS: expected=01 actual=01
+2026-07-22 13:03:33,044 [INFO] test: [CASE 4] PASS: expected=01 actual=01
+2026-07-22 13:03:33,075 [INFO] test: [CASE 5] PASS: expected=01 actual=01
+2026-07-22 13:03:33,184 [INFO] test: [CASE 6] PASS: expected=01 actual=01
+2026-07-22 13:03:33,246 [INFO] test: [CASE 7] PASS: expected=01 actual=01
+2026-07-22 13:03:33,310 [INFO] test: [CASE 8] PASS: expected=01 actual=01
+2026-07-22 13:03:33,311 [INFO] test: [CASE 9] PASS: expected=01 actual=01
+2026-07-22 13:03:33,312 [INFO] test: [CASE 10] PASS: expected=01 actual=01
+2026-07-22 13:03:33,315 [INFO] test: [CASE 11] PASS: expected=01 actual=01
+2026-07-22 13:03:33,317 [INFO] test: [CASE 12] PASS: expected=01 actual=01
+2026-07-22 13:03:33,430 [INFO] test: [CASE 13] PASS: expected=00 actual=00
+2026-07-22 13:03:33,543 [INFO] test: [CASE 14] PASS: expected=ff actual=ff
+2026-07-22 13:03:33,659 [INFO] test: [CASE 15] PASS: expected=aa actual=aa
+2026-07-22 13:03:33,776 [INFO] test: [CASE 16] PASS: expected=55 actual=55
+2026-07-22 13:03:33,891 [INFO] test: [CASE 17] PASS: expected=01 actual=01
+2026-07-22 13:03:34,007 [INFO] test: [CASE 18] PASS: expected=7f actual=7f
+2026-07-22 13:03:34,123 [INFO] test: [CASE 19] PASS: expected=80 actual=80
+2026-07-22 13:03:34,251 [INFO] test: [CASE 20] PASS: expected=bc actual=bc
+2026-07-22 13:03:34,290 [INFO] test: [CASE 21] PASS: expected=01 actual=01
+2026-07-22 13:03:34,313 [INFO] test: [CASE 22] PASS: expected=01 actual=01
+2026-07-22 13:03:34,374 [INFO] test: [CASE 23] PASS: expected=01 actual=01
+2026-07-22 13:03:34,488 [INFO] test: [CASE 24] PASS: expected=5a actual=5a
+2026-07-22 13:03:34,602 [INFO] test: [CASE 25] PASS: expected=33 actual=33
+2026-07-22 13:03:34,749 [INFO] test: [CASE 26] PASS: expected=01 actual=01
+2026-07-22 13:03:34,868 [INFO] test: [CASE 27] PASS: expected=77 actual=77
+2026-07-22 13:03:34,997 [INFO] test: [CASE 28] PASS: expected=99 actual=99
+2026-07-22 13:03:35,050 [INFO] test: [CASE 29] PASS: expected=01 actual=01
+2026-07-22 13:03:35,213 [INFO] test: [CASE 30] PASS: expected=01 actual=01
+2026-07-22 13:03:35,300 [INFO] test: [CASE 31] PASS: expected=01 actual=01
+2026-07-22 13:03:35,369 [INFO] test: [CASE 32] PASS: expected=01 actual=01
+2026-07-22 13:03:35,418 [INFO] test: [CASE 33] PASS: expected=01 actual=01
+2026-07-22 13:03:35,468 [INFO] test: [CASE 34] PASS: expected=01 actual=01
+2026-07-22 13:03:35,537 [INFO] test: [CASE 35] PASS: expected=01 actual=01
+2026-07-22 13:03:35,587 [INFO] test: [CASE 36] PASS: expected=01 actual=01
+2026-07-22 13:03:35,637 [INFO] test: [CASE 37] PASS: expected=01 actual=01
+2026-07-22 13:03:35,686 [INFO] test: [CASE 38] PASS: expected=01 actual=01
+2026-07-22 13:03:35,755 [INFO] test: [CASE 39] PASS: expected=01 actual=01
+2026-07-22 13:03:35,823 [INFO] test: [CASE 40] PASS: expected=01 actual=01
+2026-07-22 13:03:35,873 [INFO] test: [CASE 41] PASS: expected=01 actual=01
+2026-07-22 13:03:35,923 [INFO] test: [CASE 42] PASS: expected=01 actual=01
+2026-07-22 13:03:35,972 [INFO] test: [CASE 43] PASS: expected=01 actual=01
+2026-07-22 13:03:36,022 [INFO] test: [CASE 44] PASS: expected=01 actual=01
+2026-07-22 13:03:36,178 [INFO] test: [CASE 45] PASS: expected=05 actual=05
+2026-07-22 13:03:36,294 [INFO] test: [CASE 46] PASS: expected=0a actual=0a
+2026-07-22 13:03:36,410 [INFO] test: [CASE 47] PASS: expected=03 actual=03
+2026-07-22 13:03:36,525 [INFO] test: [CASE 48] PASS: expected=02 actual=02
+2026-07-22 13:03:36,737 [INFO] test: [CASE 49] PASS: expected=08 actual=08
+2026-07-22 13:03:37,066 [INFO] test: [CASE 50] PASS: expected=ff actual=ff
+2026-07-22 13:03:37,432 [INFO] test: [CASE 51] PASS: expected=80 actual=80
+2026-07-22 13:03:37,808 [INFO] test: [CASE 52] PASS: expected=fe actual=fe
+2026-07-22 13:03:38,174 [INFO] test: [CASE 53] PASS: expected=0f actual=0f
+2026-07-22 13:03:38,543 [INFO] test: [CASE 54] PASS: expected=f1 actual=f1
+2026-07-22 13:03:39,032 [INFO] test: [CASE 55] PASS: expected=23 actual=23
+2026-07-22 13:03:39,524 [INFO] test: [CASE 56] PASS: expected=05 actual=05
+2026-07-22 13:03:39,916 [INFO] test: [CASE 57] PASS: expected=2a actual=2a
+2026-07-22 13:03:40,308 [INFO] test: [CASE 58] PASS: expected=f4 actual=f4
+2026-07-22 13:03:40,818 [INFO] test: [CASE 59] PASS: expected=17 actual=17
+2026-07-22 13:03:40,977 [INFO] test: [CASE 60] PASS: expected=7f actual=7f
+2026-07-22 13:03:41,113 [INFO] test: [CASE 61] PASS: expected=00 actual=00
+2026-07-22 13:03:41,249 [INFO] test: [CASE 62] PASS: expected=00 actual=00
+2026-07-22 13:03:41,425 [INFO] test: [CASE 63] PASS: expected=7f actual=7f
+2026-07-22 13:03:41,599 [INFO] test: [CASE 64] PASS: expected=ff actual=ff
+2026-07-22 13:03:41,889 [INFO] test: [CASE 65] PASS: expected=22 actual=22
+2026-07-22 13:03:41,945 [INFO] test: [CASE 66] PASS: expected=33 actual=33
+2026-07-22 13:03:42,007 [INFO] test: [CASE 67] PASS: expected=00 actual=00
+2026-07-22 13:03:42,298 [INFO] test: [CASE 68] PASS: expected=00 actual=00
+2026-07-22 13:03:42,355 [INFO] test: [CASE 69] PASS: expected=00 actual=00
+2026-07-22 13:03:42,411 [INFO] test: [CASE 70] PASS: expected=00 actual=00
+2026-07-22 13:03:42,722 [INFO] test: [CASE 71] PASS: expected=0a actual=0a
+2026-07-22 13:03:42,937 [INFO] test: [CASE 72] PASS: first TX response observed after back-to-back reads
+2026-07-22 13:03:42,937 [INFO] test: [CASE 73] PASS: expected=e1 actual=e1
+2026-07-22 13:03:42,955 [INFO] test: [CASE 74] PASS: second TX response observed after back-to-back reads
+2026-07-22 13:03:42,956 [INFO] test: [CASE 75] PASS: expected=e2 actual=e2
+2026-07-22 13:03:43,095 [INFO] test: [CASE 76] PASS: expected=e1 actual=e1
+2026-07-22 13:03:43,288 [INFO] test: [CASE 77] PASS: at least one response observed after zero-gap reads
+2026-07-22 13:03:43,373 [INFO] test: [CASE 78] PASS: expected=e1 actual=e1
+2026-07-22 13:03:43,507 [INFO] test: [CASE 79] PASS: expected=00 actual=00
+2026-07-22 13:03:43,622 [INFO] test: [CASE 80] PASS: expected=01 actual=01
+2026-07-22 13:03:43,737 [INFO] test: [CASE 81] PASS: expected=02 actual=02
+2026-07-22 13:03:43,851 [INFO] test: [CASE 82] PASS: expected=03 actual=03
+2026-07-22 13:03:43,965 [INFO] test: [CASE 83] PASS: expected=04 actual=04
+2026-07-22 13:03:44,082 [INFO] test: [CASE 84] PASS: expected=05 actual=05
+2026-07-22 13:03:44,198 [INFO] test: [CASE 85] PASS: expected=06 actual=06
+2026-07-22 13:03:44,313 [INFO] test: [CASE 86] PASS: expected=07 actual=07
+2026-07-22 13:03:44,427 [INFO] test: [CASE 87] PASS: expected=08 actual=08
+2026-07-22 13:03:44,544 [INFO] test: [CASE 88] PASS: expected=09 actual=09
+2026-07-22 13:03:44,721 [INFO] test: [CASE 89] PASS: expected=aa actual=aa
+2026-07-22 13:03:44,778 [INFO] test: [CASE 90] PASS: expected=55 actual=55
+2026-07-22 13:03:44,974 [INFO] test: [CASE 91] PASS: expected=01 actual=01
+2026-07-22 13:03:45,292 [INFO] test: [CASE 92] PASS: expected=c8 actual=c8
+2026-07-22 13:03:45,606 [INFO] test: [CASE 93] PASS: expected=14 actual=14
+2026-07-22 13:03:45,916 [INFO] test: [CASE 94] PASS: expected=0f actual=0f
+2026-07-22 13:03:46,226 [INFO] test: [CASE 95] PASS: expected=ce actual=ce
+2026-07-22 13:03:46,544 [INFO] test: [CASE 96] PASS: expected=07 actual=07
+2026-07-22 13:03:46,859 [INFO] test: [CASE 97] PASS: expected=f8 actual=f8
+2026-07-22 13:03:47,168 [INFO] test: [CASE 98] PASS: expected=0f actual=0f
+2026-07-22 13:03:47,481 [INFO] test: [CASE 99] PASS: expected=01 actual=01
+2026-07-22 13:03:47,792 [INFO] test: [CASE 100] PASS: expected=03 actual=03
+2026-07-22 13:03:48,105 [INFO] test: [CASE 101] PASS: expected=00 actual=00
+2026-07-22 13:03:48,359 [INFO] test: [CASE 102] PASS: quantizer o_overflow observed set after a saturating int4 quantize
+2026-07-22 13:03:48,618 [INFO] test: [CASE 103] PASS: quantizer o_overflow clear after a non-saturating int4 quantize
+2026-07-22 13:03:48,794 [INFO] test: [CASE 104] PASS: reg_bank is not idle mid-MAT_MUL before reset
+2026-07-22 13:03:48,795 [INFO] test: [CASE 105] PASS: reg_bank returns to idle after reset asserted mid-operation
+2026-07-22 13:03:48,929 [INFO] test: [CASE 106] PASS: expected=2a actual=2a
+2026-07-22 13:03:49,222 [INFO] test: [CASE 107] PASS: expected=2a actual=2a
+2026-07-22 13:03:49,473 [INFO] test: [CASE 108] PASS: expected=5a actual=5a
+2026-07-22 13:03:49,528 [INFO] test: [CASE 109] PASS: expected=6b actual=6b
+2026-07-22 13:03:49,609 [INFO] test: [CASE 110] PASS: expected=de actual=de
+2026-07-22 13:03:49,609 [INFO] test: === VERIFICATION COMPLETE ===
+2026-07-22 13:03:49,609 [INFO] test: Total Passes: 110
+2026-07-22 13:03:49,609 [INFO] test: Total Failures: 0
+2026-07-22 13:03:49,610 [INFO] cocotb.regression: integration_final_TB.integration_final_cocotb_test [32mpassed[49m[39m
+2026-07-22 13:03:49,613 [INFO] cocotb.regression: ************************************************************************************************************
+** TEST                                                STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+************************************************************************************************************
+** integration_final_TB.integration_final_cocotb_test  [32m PASS [49m[39m    4067890.00          16.59     245187.82  **
+************************************************************************************************************
+** TESTS=1 PASS=1 FAIL=0 SKIP=0                                  4067890.00          16.59     245137.96  **
+************************************************************************************************************
+

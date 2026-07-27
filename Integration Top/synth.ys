@@ -1,0 +1,59 @@
+
+# Read RTL
+
+read_verilog uartTopBaseExt.v
+read_verilog uart_tx.v
+read_verilog uart_rx.v
+read_verilog uart_baud_gen.v
+
+read_verilog -sv command_parser.sv
+read_verilog -sv integration_minus_UART.sv
+read_verilog -sv reg_bank.sv
+read_verilog -sv MAC_grid.sv
+read_verilog -sv quantizer.sv
+read_verilog -sv int_MAC.sv
+read_verilog -sv integration_final.sv
+
+hierarchy -top integration_final
+
+# Library
+
+read_liberty -lib D:/ChipathonTest/integration_final/OPENROAD_flow_scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+
+
+# Synthesis
+
+proc
+opt
+check
+
+synth -top integration_final
+
+opt
+clean
+
+dfflibmap -liberty D:/ChipathonTest/integration_final/OPENROAD_flow_scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+
+abc -fast -liberty D:/ChipathonTest/integration_final/OPENROAD_flow_scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+
+opt
+clean
+
+check
+
+
+# Reports
+
+
+tee -o reports/synthesis_report.txt stat -liberty D:/ChipathonTest/integration_final/OPENROAD_flow_scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+
+tee -o reports/design_check.txt check
+
+tee -o reports/hierarchy.txt hierarchy
+
+
+# Outputs
+
+
+write_verilog -noattr reports/integration_final_synth.v
+write_json reports/integration_final.json
