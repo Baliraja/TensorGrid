@@ -41,7 +41,7 @@ run: compile
 	@echo "Running simulation..."
 	@echo ""
 	@echo "--- SIMULATION OUTPUT ---"
-	$(VVP) $(TARGET)
+	$(VVP) $(TARGET) 
 
 # Clean build artifacts
 clean:

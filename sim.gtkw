@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Sat Jul 11 15:11:56 2026
+[*]
+[dumpfile] "/Users/kanwarpannu/Desktop/TensorGrid/TensorGrid/simulation_waves.vcd"
+[dumpfile_mtime] "Fri Jul 10 16:43:44 2026"
+[dumpfile_size] 94982376
+[savefile] "/Users/kanwarpannu/Desktop/TensorGrid/TensorGrid/sim.gtkw"
+[timestart] 0
+[size] 1333 633
+[pos] -1 -1
+*-27.000000 116000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[sst_width] 255
+[signals_width] 120
+[sst_expanded] 1
+[sst_vpaned_height] 171
+@28
+uart_test_full.clk
+@22
+uart_test_full.rxData[7:0]
+@29
+uart_test_full.newRxData
+@22
+uart_test_full.send[7:0]
+@28
+uart_test_full.baudClk
+uart_test_full.rx_match
+[pattern_trace] 1
+[pattern_trace] 0
