@@ -1,0 +1,96 @@
+VCD info: dumpfile regbank_TB.vcd opened for output.
+[35000] Test 1: Reset during IDLE
+[75000] Test 2: Reset during ADD
+[105000] Test 3: Reset during EL_MUL
+[135000] Test 4: Reset during MAT_MUL
+[165000] Test 5: Reset during DOT_PROD
+[195000] Test 6: Reset during QUANTIZATION
+[225000] Test 7: Verify all matrices cleared after reset
+[225000] Test 8: Verify accum cleared after reset
+[225000] Test 9: Verify o_idle = 1 after reset
+[225000] Test 10-13: Configure matrix 0
+[245000] Test 10-13: Configure matrix 1
+[265000] Test 10-13: Configure matrix 2
+[285000] Test 10-13: Configure matrix 3
+[305000] Test 16: Reconfigure matrix 0 multiple times
+[375000] Test 28: Read after reset
+[385000] Test 18: Matrix 0 all zeros
+[475000] Test 19: Matrix 1 all 0xFF
+[565000] Test 20: Matrix 2 all 0x80
+[655000] Test 21: Matrix 3 all 0x7F
+[745000] Test 22: Matrix 0 checkerboard pattern
+[835000] Test 23: Matrix 1 random pattern
+[925000] Test 24: Matrix 2, row=0, col=0
+[935000] Test 25: Matrix 2, row=GRID_SIZE-1, col=GRID_SIZE-1
+[945000] Test 26: Matrix 2, every edge row
+[975000] Test 27: Matrix 2, every edge column
+[1005000] Test 29-30: Read matrix 0
+[1095000] Test 29-30: Read matrix 1
+[1185000] Test 29-30: Read matrix 2
+[1275000] Test 29-30: Read matrix 3
+[1385000] Test 37: Same value 0 treated as unsigned (using matrix 1 vs matrix 0)
+[1635000] Test 37: Same value 81 treated as unsigned (using matrix 1 vs matrix 0)
+[1885000] Test 37: Same value 7f treated as unsigned (using matrix 1 vs matrix 0)
+[2135000] Test 37: Same value ff treated as unsigned (using matrix 1 vs matrix 0)
+[2385000] Test 37: Same value 1 treated as unsigned (using matrix 1 vs matrix 0)
+[2635000] Test 37: Same value 80 treated as unsigned (using matrix 1 vs matrix 0)
+[2905000] Test 38: 0 + 0
+[3165000] Test 39: max positive + max positive
+[3445000] Test 40: negative + negative
+[3705000] Test 41: positive + negative
+[3965000] Test 44-46: Operation count - First cycle operand, Second cycle operand, Extra cycles ignored
+[4065000] Test 47: 0 * 0
+[4265000] Test 54: Check - All GRID_SIZE*GRID_SIZE outputs valid
+[4265000] Test 55: Check - Only first valid cycle asserted
+[4315000] Test 48: 1 * 1
+[4515000] Test 53: unsigned max * max
+[4735000] Test 49: -1 * -1
+[4935000] Test 50: max * max
+[5135000] Test 51: min signed * min signed
+[5335000] Test 52: positive * negative
+[5535000] Test 59-64: Execute general MatMul and check cycles
+[5725000] Test 65: Check - All MAC cycles
+[5765000] Test 66: Check - Last MAC cycle
+[5805000] Test 67: Check - Accumulation stored correctly
+[5805000] Test 77: Check - Only MAC valid (MAC valid)
+[5825000] Cycle 1
+[5835000] Cycle 2
+[5845000] Cycle 3
+[5855000] Cycle 4
+[5865000] Cycle 5
+[5875000] Cycle 6
+[5885000] Cycle 7
+[5895000] Cycle 8
+[5905000] Cycle 9
+[5955000] Test 78: Check - Result stored at required matrix location
+[5955000] Test 79: Minimum result
+[6035000] Test 80: Maximum result
+[6115000] Test 81: Zero result
+[6195000] Test 82: Negative result
+[6275000] Test 83: Result overwritten by next operation
+[6355000] Test 84-88: Input - accumulator = 0, minimum, maximum, negative, positive
+[6365000] Test 89,92: Latency - First quantizer output, Coordinates - First element
+[6515000] Test 90-91,93: Latency - Last quantizer output, All GRID_SIZE*GRID_SIZE outputs, Coordinates - Last element
+[6515000] Test 97: Data - All zeros
+[6605000] Test 94: Shift amount 0
+[6615000] Test 98-99: Data - Unique values per row, Signed negative values
+[6705000] Test 95: Shift amount 1
+[6715000] Test 96: Shift amount GRID_SIZE-1
+[6725000] Test 106: Data - All zeros
+[6815000] Test 103: Shift amount 0
+[6825000] Test 107-108: Data - Unique values per column, Signed negative values
+[6915000] Test 104: Shift amount 1
+[6925000] Test 105: Shift amount GRID_SIZE-1
+[6945000] Test 112-115: Signed matrix - All positive, All negative, Mixed positive/negative, Zero values
+[6975000] Test 116: Unsigned matrix - Verify
+[7015000] Test 117-120: Signed matrix - Value below limit, Value equal limit, Value above limit, Negative values
+[7035000] Test 125: Clamp values - 0x7F
+[7055000] Test 124: Clamp values - 0x00
+[7075000] Test 126: Clamp values - 0xFF
+[7095000] Test 127 + 132: IDLE -> ADD -> IDLE
+[7175000] Test 128 + 132: IDLE -> EL_MUL -> IDLE
+[7245000] Test 129 + 132: IDLE -> MAT_MUL -> IDLE
+[7335000] Test 130 + 132: IDLE -> DOT_PROD -> IDLE
+[7485000] Test 131 + 132: IDLE -> QUANTIZATION -> IDLE
+SUCCESS: All 151 cases tested
+reg_bank_TB_2.sv:778: $finish called at 7835000 (1ps)

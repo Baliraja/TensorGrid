@@ -1,0 +1,207 @@
+rm -f results.xml
+"make" -f Makefile results.xml
+make[1]: Entering directory '/home/mridula/chipathon/regbank_mod/regbank_cocotb'
+mkdir -p sim_build
+/usr/bin/iverilog -o sim_build/sim.vvp -s reg_bank -g2012 -s waves_dump -Preg_bank.GRID_SIZE=3 -f sim_build/cmds.f -s cocotb_iverilog_dump  /home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv /home/mridula/chipathon/regbank_mod/regbank_cocotb/waves_dump.sv sim_build/cocotb_iverilog_dump.v
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/regbank_cocotb/reg_bank.sv:176: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+/home/mridula/chipathon/regbank_mod/venv/lib/python3.12/site-packages/cocotb_tools/makefiles/simulators/Makefile.icarus:66: Using MODULE is deprecated, please use COCOTB_TEST_MODULES instead.
+rm -f results.xml
+COCOTB_TEST_MODULES=test_reg_bank COCOTB_TESTCASE= COCOTB_TEST_FILTER= COCOTB_TOPLEVEL=reg_bank TOPLEVEL_LANG=verilog \
+         /usr/bin/vvp -M /home/mridula/chipathon/regbank_mod/venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus   sim_build/sim.vvp -fst  
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.4 interpreter at /home/mridula/chipathon/regbank_mod/venv/bin/python3
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 12.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1784678325
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /home/mridula/chipathon/regbank_mod/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_reg_bank.test_01_reset (1/17)
+     0.00ns WARNING  py.warnings                        /home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py:181: DeprecationWarning: The 'units' argument has been renamed to 'unit'.
+                                                          cocotb.start_soon(Clock(dut.i_clk, 10, units="ns").start())
+    35.00ns INFO     cocotb.reg_bank                    Test 1: Reset during IDLE
+   435.00ns INFO     cocotb.reg_bank                    Tests 2-5: Reset during ADD
+   925.00ns INFO     cocotb.reg_bank                    Tests 2-5: Reset during EL_MUL
+  1415.00ns INFO     cocotb.reg_bank                    Tests 2-5: Reset during MAT_MUL
+  1905.00ns INFO     cocotb.reg_bank                    Tests 2-5: Reset during DOT_PROD
+  2395.00ns INFO     cocotb.reg_bank                    Test 6: Reset during QUANTIZATION
+  2435.00ns INFO     cocotb.reg_bank                    Tests 7-9: matrices/accum cleared, o_idle=1
+  2795.00ns INFO     cocotb.regression                  test_reg_bank.test_01_reset passed
+  2795.00ns INFO     cocotb.regression                  running test_reg_bank.test_02_matrix_config (2/17)
+  2840.00ns INFO     cocotb.reg_bank                    Tests 10-15: configure matrix 0 signed=0/1
+  2860.00ns INFO     cocotb.reg_bank                    Tests 10-15: configure matrix 1 signed=0/1
+  2880.00ns INFO     cocotb.reg_bank                    Tests 10-15: configure matrix 2 signed=0/1
+  2900.00ns INFO     cocotb.reg_bank                    Tests 10-15: configure matrix 3 signed=0/1
+  2920.00ns INFO     cocotb.reg_bank                    Test 16: reconfigure matrix 0 multiple times
+  2950.00ns INFO     cocotb.regression                  test_reg_bank.test_02_matrix_config passed
+  2950.00ns INFO     cocotb.regression                  running test_reg_bank.test_03_data_load_read (3/17)
+  2995.00ns INFO     cocotb.reg_bank                    Test 28: read after reset
+  3005.00ns INFO     cocotb.reg_bank                    Tests 18-21: fill 0x00 / 0xFF / 0x80 / 0x7F
+  3365.00ns INFO     cocotb.reg_bank                    Test 22: checkerboard pattern
+  3455.00ns INFO     cocotb.reg_bank                    Test 23: random pattern
+  3545.00ns INFO     cocotb.reg_bank                    Tests 24-27: boundary coordinates
+  3625.00ns INFO     cocotb.reg_bank                    Tests 29-30: read back every location of every matrix
+  3985.00ns INFO     cocotb.regression                  test_reg_bank.test_03_data_load_read passed
+  3985.00ns INFO     cocotb.regression                  running test_reg_bank.test_04_sign_extension (4/17)
+  4050.00ns INFO     cocotb.reg_bank                    Tests 31-37: value 0x00 signed vs unsigned
+  4290.00ns INFO     cocotb.reg_bank                    Tests 31-37: value 0x01 signed vs unsigned
+  4530.00ns INFO     cocotb.reg_bank                    Tests 31-37: value 0x7f signed vs unsigned
+  4770.00ns INFO     cocotb.reg_bank                    Tests 31-37: value 0x80 signed vs unsigned
+  5010.00ns INFO     cocotb.reg_bank                    Tests 31-37: value 0x81 signed vs unsigned
+  5250.00ns INFO     cocotb.reg_bank                    Tests 31-37: value 0xff signed vs unsigned
+  5490.00ns INFO     cocotb.regression                  test_reg_bank.test_04_sign_extension passed
+  5490.00ns INFO     cocotb.regression                  running test_reg_bank.test_05_add (5/17)
+  5555.00ns INFO     cocotb.reg_bank                    Test 38: 0 + 0
+  5805.00ns INFO     cocotb.reg_bank                    Test 39: max + max (unsigned)
+  6075.00ns INFO     cocotb.reg_bank                    Test 40: negative + negative
+  6325.00ns INFO     cocotb.reg_bank                    Test 41: positive + negative
+  6575.00ns INFO     cocotb.reg_bank                    Tests 44-46: ADD operand valid timing (2 cycles then off)
+  6645.00ns INFO     cocotb.regression                  test_reg_bank.test_05_add passed
+  6645.00ns INFO     cocotb.regression                  running test_reg_bank.test_06_el_mul (6/17)
+  6710.01ns INFO     cocotb.reg_bank                    Test 47 + 54-55: 0*0, all outputs valid one cycle only
+  6950.01ns INFO     cocotb.reg_bank                    Test 48: 1*1
+  7210.01ns INFO     cocotb.reg_bank                    Test 53: umax*umax
+  7470.01ns INFO     cocotb.reg_bank                    Test 49: -1*-1
+  7730.01ns INFO     cocotb.reg_bank                    Test 50: max*max
+  7990.01ns INFO     cocotb.reg_bank                    Test 51: min*min
+  8250.00ns INFO     cocotb.reg_bank                    Test 52: pos*neg
+  8510.00ns INFO     cocotb.regression                  test_reg_bank.test_06_el_mul passed
+  8510.00ns INFO     cocotb.regression                  running test_reg_bank.test_07_mat_mul (7/17)
+  8555.01ns INFO     cocotb.reg_bank                    Tests 59-64: general MatMul (m0=1, m1=2)
+  8745.01ns INFO     cocotb.reg_bank                    Test 65: all GRID MAC streaming cycles valid
+  8775.01ns INFO     cocotb.reg_bank                    Test 66: valid deasserted after last MAC cycle
+  8815.01ns INFO     cocotb.reg_bank                    Test 67: accumulation stored correctly
+  8815.01ns INFO     cocotb.regression                  test_reg_bank.test_07_mat_mul passed
+  8815.01ns INFO     cocotb.regression                  running test_reg_bank.test_08_dot_prod (8/17)
+  8860.01ns INFO     cocotb.reg_bank                    Tests 68-77: dot product, only MAC[0] valid
+  9000.01ns INFO     cocotb.reg_bank                    Test 78: result stored at (0, GRID-1)
+  9000.01ns INFO     cocotb.regression                  test_reg_bank.test_08_dot_prod passed
+  9000.01ns INFO     cocotb.regression                  running test_reg_bank.test_09_accum (9/17)
+  9045.01ns INFO     cocotb.reg_bank                    Test 79: minimum
+  9115.01ns INFO     cocotb.reg_bank                    Test 80: maximum
+  9185.01ns INFO     cocotb.reg_bank                    Test 81: zero
+  9255.01ns INFO     cocotb.reg_bank                    Test 82: negative
+  9325.01ns INFO     cocotb.reg_bank                    Test 83: overwrite
+  9395.01ns INFO     cocotb.regression                  test_reg_bank.test_09_accum passed
+  9395.01ns INFO     cocotb.regression                  running test_reg_bank.test_10_quant (10/17)
+  9440.01ns INFO     cocotb.reg_bank                    Tests 84-88: seed accum (0 everywhere, max at last)
+  9510.01ns INFO     cocotb.reg_bank                    Tests 89-93: run quantization into matrix 2
+  9750.01ns INFO     cocotb.regression                  test_reg_bank.test_10_quant passed
+  9750.01ns INFO     cocotb.regression                  running test_reg_bank.test_11_shift_row (11/17)
+  9795.01ns INFO     cocotb.reg_bank                    Test 97/94: zeros, shift amount 0
+  9895.01ns INFO     cocotb.reg_bank                    Tests 98-99: unique/negative values per row
+  9985.01ns INFO     cocotb.reg_bank                    Test 95 + 100-102: shift by 1
+ 10085.01ns INFO     cocotb.reg_bank                    Test 96: shift by GRID-1
+ 10155.01ns INFO     cocotb.regression                  test_reg_bank.test_11_shift_row passed
+ 10155.01ns INFO     cocotb.regression                  running test_reg_bank.test_12_shift_col (12/17)
+ 10200.01ns INFO     cocotb.reg_bank                    Test 106/103: zeros, shift amount 0
+ 10300.01ns INFO     cocotb.reg_bank                    Tests 107-108: unique/negative values per column
+ 10390.01ns INFO     cocotb.reg_bank                    Test 104 + 109-111: shift by 1
+ 10490.01ns INFO     cocotb.reg_bank                    Test 105: shift by GRID-1
+ 10560.01ns INFO     cocotb.regression                  test_reg_bank.test_12_shift_col passed
+ 10560.01ns INFO     cocotb.regression                  running test_reg_bank.test_13_relu (13/17)
+ 10605.01ns INFO     cocotb.reg_bank                    Tests 112-115: signed relu (pos kept, neg zeroed)
+ 10665.01ns INFO     cocotb.reg_bank                    Test 116: unsigned relu is a no-op
+ 10705.01ns INFO     cocotb.regression                  test_reg_bank.test_13_relu passed
+ 10705.01ns INFO     cocotb.regression                  running test_reg_bank.test_14_clamp (14/17)
+ 10750.01ns INFO     cocotb.reg_bank                    Tests 117-120, 125: signed clamp @ 0x7F
+ 10830.01ns INFO     cocotb.reg_bank                    Tests 121-124: unsigned clamp @ 0x00
+ 10870.01ns INFO     cocotb.reg_bank                    Test 126: unsigned clamp @ 0xFF (no change)
+ 10900.01ns INFO     cocotb.regression                  test_reg_bank.test_14_clamp passed
+ 10900.01ns INFO     cocotb.regression                  running test_reg_bank.test_15_fsm (15/17)
+ 10945.01ns INFO     cocotb.reg_bank                    Tests 127-130+132: IDLE -> ADD -> IDLE
+ 11015.01ns INFO     cocotb.reg_bank                    Tests 127-130+132: IDLE -> EL_MUL -> IDLE
+ 11075.01ns INFO     cocotb.reg_bank                    Tests 127-130+132: IDLE -> MAT_MUL -> IDLE
+ 11155.01ns INFO     cocotb.reg_bank                    Tests 127-130+132: IDLE -> DOT_PROD -> IDLE
+ 11295.01ns INFO     cocotb.reg_bank                    Test 131+132: IDLE -> QUANTIZATION -> IDLE
+ 11445.01ns INFO     cocotb.reg_bank                    Test 134: new command ignored while busy
+ 11515.01ns INFO     cocotb.regression                  test_reg_bank.test_15_fsm passed
+ 11515.01ns INFO     cocotb.regression                  running test_reg_bank.test_16_invalid (16/17)
+ 11560.01ns INFO     cocotb.reg_bank                    Tests 135-137: change selection/data mid-operation
+ 11630.01ns INFO     cocotb.reg_bank                    Tests 138-139: multiple control signals together
+ 11650.01ns INFO     cocotb.regression                  test_reg_bank.test_16_invalid passed
+ 11650.01ns INFO     cocotb.regression                  running test_reg_bank.test_17_random_stress (17/17)
+ 41705.02ns INFO     cocotb.regression                  test_reg_bank.test_17_random_stress passed
+ 41705.02ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_reg_bank.test_01_reset            PASS        2795.00           0.08      35387.87  **
+                                                        ** test_reg_bank.test_02_matrix_config    PASS         155.00           0.00      33754.78  **
+                                                        ** test_reg_bank.test_03_data_load_read   PASS        1035.00           0.03      35689.31  **
+                                                        ** test_reg_bank.test_04_sign_extension   PASS        1505.00           0.04      38565.90  **
+                                                        ** test_reg_bank.test_05_add              PASS        1155.00           0.03      35963.45  **
+                                                        ** test_reg_bank.test_06_el_mul           PASS        1865.00           0.05      40605.56  **
+                                                        ** test_reg_bank.test_07_mat_mul          PASS         305.00           0.01      39531.00  **
+                                                        ** test_reg_bank.test_08_dot_prod         PASS         185.00           0.00      50239.32  **
+                                                        ** test_reg_bank.test_09_accum            PASS         395.00           0.01      54181.11  **
+                                                        ** test_reg_bank.test_10_quant            PASS         355.00           0.01      45813.30  **
+                                                        ** test_reg_bank.test_11_shift_row        PASS         405.00           0.01      39710.43  **
+                                                        ** test_reg_bank.test_12_shift_col        PASS         405.00           0.01      34589.56  **
+                                                        ** test_reg_bank.test_13_relu             PASS         145.00           0.01      24438.40  **
+                                                        ** test_reg_bank.test_14_clamp            PASS         195.00           0.01      37146.39  **
+                                                        ** test_reg_bank.test_15_fsm              PASS         615.00           0.01      53989.22  **
+                                                        ** test_reg_bank.test_16_invalid          PASS         135.00           0.00      40529.03  **
+                                                        ** test_reg_bank.test_17_random_stress    PASS       30055.00           1.04      28904.59  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=17 PASS=17 FAIL=0 SKIP=0                    41705.02           1.36      30717.23  **
+                                                        **********************************************************************************************
+FST info: dumpfile reg_bank_waves.fst opened for output.
+FST warning: sim_build/cocotb_iverilog_dump.v:3: $dumpfile called after $dumpvars started,
+                                                 using existing file (reg_bank_waves.fst).
+FST warning: ignoring signals in previously scanned scope reg_bank.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop0.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop1.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop1.$ivl_for_loop2.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop10.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop10.$ivl_for_loop11.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop12.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop12.$ivl_for_loop13.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop14.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop14.$ivl_for_loop15.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop16.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop16.$ivl_for_loop17.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop18.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop18.$ivl_for_loop19.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop20.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop20.$ivl_for_loop21.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop3.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop4.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop5.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop5.$ivl_for_loop6.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop5.$ivl_for_loop6.$ivl_for_loop7.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop8.
+FST warning: ignoring signals in previously scanned scope reg_bank.$ivl_for_loop8.$ivl_for_loop9.
+make[1]: Leaving directory '/home/mridula/chipathon/regbank_mod/regbank_cocotb'

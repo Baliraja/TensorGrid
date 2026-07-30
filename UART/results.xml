@@ -1,7 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1784572619" />
-    <testcase name="test_uart_tx_golden" classname="test_uart" file="/Users/kanwarpannu/Desktop/TensorGrid/TensorGrid/UART/test_uart.py" lineno="30" time="12.018800020217896" sim_time_ns="5156327.0" ratio_time="429021.7818189905" />
-    <testcase name="test_uart_rx_golden" classname="test_uart" file="/Users/kanwarpannu/Desktop/TensorGrid/TensorGrid/UART/test_uart.py" lineno="70" time="12.578027963638306" sim_time_ns="4062570.0" ratio_time="322989.4234409752" />
-  </testsuite>
-</testsuites>

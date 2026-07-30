@@ -1,0 +1,22 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1784680072" />
+    <testcase name="test_01_reset" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="191" time="0.0799100399017334" sim_time_ns="2795.0" ratio_time="34976.83148997366" />
+    <testcase name="test_02_matrix_config" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="225" time="0.004964113235473633" sim_time_ns="155.0" ratio_time="31224.106431007156" />
+    <testcase name="test_03_data_load_read" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="249" time="0.02954721450805664" sim_time_ns="1035.0" ratio_time="35028.68264342774" />
+    <testcase name="test_04_sign_extension" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="297" time="0.038626909255981445" sim_time_ns="1504.9999999999995" ratio_time="38962.47535691579" />
+    <testcase name="test_05_add" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="322" time="0.029520511627197266" sim_time_ns="1155.0" ratio_time="39125.33815761844" />
+    <testcase name="test_06_el_mul" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="362" time="0.04928112030029297" sim_time_ns="1864.999999999999" ratio_time="37844.10720851474" />
+    <testcase name="test_07_mat_mul" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="398" time="0.009090662002563477" sim_time_ns="305.0" ratio_time="33550.91190432479" />
+    <testcase name="test_08_dot_prod" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="424" time="0.003335237503051758" sim_time_ns="185.0" ratio_time="55468.31367503038" />
+    <testcase name="test_09_accum" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="446" time="0.007582187652587891" sim_time_ns="395.0" ratio_time="52095.78265517892" />
+    <testcase name="test_10_quant" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="465" time="0.007454872131347656" sim_time_ns="355.0" ratio_time="47619.86439810669" />
+    <testcase name="test_11_shift_row" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="495" time="0.011785030364990234" sim_time_ns="405.0" ratio_time="34365.63058871131" />
+    <testcase name="test_12_shift_col" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="532" time="0.010816574096679688" sim_time_ns="405.0" ratio_time="37442.539234702876" />
+    <testcase name="test_13_relu" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="569" time="0.004357099533081055" sim_time_ns="145.0" ratio_time="33279.019425444596" />
+    <testcase name="test_14_clamp" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="596" time="0.005453824996948242" sim_time_ns="195.0" ratio_time="35754.72262295082" />
+    <testcase name="test_15_fsm" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="632" time="0.01213693618774414" sim_time_ns="615.0" ratio_time="50671.76678584057" />
+    <testcase name="test_16_invalid" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="665" time="0.0031549930572509766" sim_time_ns="135.0" ratio_time="42789.317615053274" />
+    <testcase name="test_17_random_stress" classname="test_reg_bank" file="/home/mridula/chipathon/regbank_mod/regbank_cocotb/test_reg_bank.py" lineno="689" time="1.0374529361724854" sim_time_ns="30055.000000000004" ratio_time="28969.988856442065" />
+  </testsuite>
+</testsuites>

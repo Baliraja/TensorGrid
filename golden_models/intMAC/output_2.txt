@@ -1,0 +1,57 @@
+rm -f results.xml
+"make" -f Makefile results.xml
+make[1]: Entering directory '/home/mridula/chipathon/intmactest/int_MAC_golden_model'
+rm -f results.xml
+COCOTB_TEST_MODULES=test_int_mac COCOTB_TESTCASE= COCOTB_TEST_FILTER= COCOTB_TOPLEVEL=int_MAC TOPLEVEL_LANG=verilog \
+         /usr/bin/vvp -M /home/mridula/chipathon/intmactest/int_MAC_golden_model/venv/lib/python3.12/site-packages/cocotb/libs -m libcocotbvpi_icarus   sim_build/sim.vvp -fst  
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.4 interpreter at /home/mridula/chipathon/intmactest/int_MAC_golden_model/venv/bin/python3
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 12.0 (stable)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1784464698
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /home/mridula/chipathon/intmactest/int_MAC_golden_model/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.regression                  pytest not found, install it to enable better AssertionError messages
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_int_mac.test_directed (1/9)
+                                                            Directed test cases matching the original testbench's directed vectors.
+   151.00ns INFO     cocotb.regression                  test_int_mac.test_directed passed
+   151.00ns INFO     cocotb.regression                  running test_int_mac.test_overflow_freeze (2/9)
+                                                            Drive repeated large products to force overflow, then confirm freeze behavior.
+   902.00ns INFO     cocotb.regression                  test_int_mac.test_overflow_freeze passed
+   902.00ns INFO     cocotb.regression                  running test_int_mac.test_reset_midstream (3/9)
+                                                            Reset in the middle of accumulation, confirm both DUT and golden clear.
+  1023.00ns INFO     cocotb.regression                  test_int_mac.test_reset_midstream passed
+  1023.00ns INFO     cocotb.regression                  running test_int_mac.test_overflow_exact_boundary (4/9)
+                                                            Push the accumulator to exactly MAX (4194303), confirm no overflow there,
+ 11324.00ns INFO     cocotb.regression                  test_int_mac.test_overflow_exact_boundary passed
+ 11324.00ns INFO     cocotb.regression                  running test_int_mac.test_underflow_exact_boundary (5/9)
+                                                            Same idea as above but for the negative boundary (MIN = -4194304).
+ 21625.00ns INFO     cocotb.regression                  test_int_mac.test_underflow_exact_boundary passed
+ 21625.00ns INFO     cocotb.regression                  running test_int_mac.test_valid_toggling (6/9)
+                                                            Toggle i_valid every other cycle with distinct operand values each time,
+ 22056.01ns INFO     cocotb.regression                  test_int_mac.test_valid_toggling passed
+ 22056.01ns INFO     cocotb.regression                  running test_int_mac.test_overflow_reset_overflow_again (7/9)
+                                                            Overflow once, reset mid-freeze, confirm clean state, then drive it into
+ 23467.01ns INFO     cocotb.regression                  test_int_mac.test_overflow_reset_overflow_again passed
+ 23467.01ns INFO     cocotb.regression                  running test_int_mac.test_reset_dominates_over_valid (8/9)
+                                                            Unlike every other test (which forces i_valid=0 whenever i_rst_n=0 via
+ 23548.01ns INFO     cocotb.regression                  test_int_mac.test_reset_dominates_over_valid passed
+ 23548.01ns INFO     cocotb.regression                  running test_int_mac.test_randomized (9/9)
+                                                            Randomized stimulus, matching the original TB's random loop (100 cycles).
+ 25119.01ns INFO     cocotb.regression                  test_int_mac.test_randomized passed
+ 25119.01ns INFO     cocotb.regression                  *********************************************************************************************************
+                                                        ** TEST                                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************
+                                                        ** test_int_mac.test_directed                        PASS         151.00           0.00      47380.86  **
+                                                        ** test_int_mac.test_overflow_freeze                 PASS         751.00           0.01      95120.71  **
+                                                        ** test_int_mac.test_reset_midstream                 PASS         121.00           0.00      80582.85  **
+                                                        ** test_int_mac.test_overflow_exact_boundary         PASS       10301.00           0.08     126829.62  **
+                                                        ** test_int_mac.test_underflow_exact_boundary        PASS       10301.00           0.09     119798.38  **
+                                                        ** test_int_mac.test_valid_toggling                  PASS         431.00           0.00     102190.22  **
+                                                        ** test_int_mac.test_overflow_reset_overflow_again   PASS        1411.00           0.01      98339.39  **
+                                                        ** test_int_mac.test_reset_dominates_over_valid      PASS          81.00           0.00      83106.32  **
+                                                        ** test_int_mac.test_randomized                      PASS        1571.00           0.02     102615.54  **
+                                                        *********************************************************************************************************
+                                                        ** TESTS=9 PASS=9 FAIL=0 SKIP=0                                 25119.01           0.22     111866.73  **
+                                                        *********************************************************************************************************
+FST info: dumpfile sim_build/int_MAC.fst opened for output.
+make[1]: Leaving directory '/home/mridula/chipathon/intmactest/int_MAC_golden_model'

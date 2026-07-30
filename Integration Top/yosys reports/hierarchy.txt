@@ -1,0 +1,30 @@
+
+25. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `integration_final'. Setting top module to integration_final.
+
+25.1. Analyzing design hierarchy..
+Top module:  \integration_final
+Used module:     \uartTopBaseExt
+Used module:         \uartRx
+Used module:         \uartTx
+Used module:         \baudGenExt
+Used module:     $paramod\integration_minus_UART\GRID_SIZE=s32'00000000000000000000000000000011
+Used module:         \quantizer
+Used module:         $paramod\MAC_grid\GRID_SIZE=s32'00000000000000000000000000000011
+Used module:             \int_MAC
+Used module:         $paramod\reg_bank\GRID_SIZE=s32'00000000000000000000000000000011
+Used module:         $paramod\command_parser\GRID_SIZE=s32'00000000000000000000000000000011
+
+25.2. Analyzing design hierarchy..
+Top module:  \integration_final
+Used module:     \uartTopBaseExt
+Used module:         \uartRx
+Used module:         \uartTx
+Used module:         \baudGenExt
+Used module:     $paramod\integration_minus_UART\GRID_SIZE=s32'00000000000000000000000000000011
+Used module:         \quantizer
+Used module:         $paramod\MAC_grid\GRID_SIZE=s32'00000000000000000000000000000011
+Used module:             \int_MAC
+Used module:         $paramod\reg_bank\GRID_SIZE=s32'00000000000000000000000000000011
+Used module:         $paramod\command_parser\GRID_SIZE=s32'00000000000000000000000000000011
+Removed 0 unused modules.

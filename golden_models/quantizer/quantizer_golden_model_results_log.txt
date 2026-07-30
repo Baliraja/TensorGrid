@@ -1,0 +1,311 @@
+                                                            Execute and score all 302 quantizer test-plan cases.
+     1.00ns INFO     test                               [PASS] TC1.1 — Active-low reset clears the quantizer outputs
+    55.00ns INFO     test                               [PASS] TC2.1 — Normal positive result
+    65.00ns INFO     test                               [PASS] TC2.2 — Negative signed zero point
+    75.00ns INFO     test                               [PASS] TC2.3 — Negative input data
+    85.00ns INFO     test                               [PASS] TC2.4 — Zero data returns zero point
+    95.00ns INFO     test                               [PASS] TC2.5 — Large positive early overflow
+   105.00ns INFO     test                               [PASS] TC2.6 — Positive exponent-135 overflow
+   115.00ns INFO     test                               [PASS] TC2.7 — Negative exponent-135 overflow
+   125.00ns INFO     test                               [PASS] TC2.8 — Exact int8 positive limit
+   135.00ns INFO     test                               [PASS] TC2.9 — One above int8 positive limit
+   145.00ns INFO     test                               [PASS] TC2.10 — Exact int8 negative limit
+   155.00ns INFO     test                               [PASS] TC2.11 — One below int8 negative limit
+   165.00ns INFO     test                               [PASS] TC2.12 — Positive 0.5 tie
+   175.00ns INFO     test                               [PASS] TC2.13 — Positive 1.5 tie
+   185.00ns INFO     test                               [PASS] TC2.14 — Negative 0.5 tie
+   195.00ns INFO     test                               [PASS] TC2.15 — Negative 1.5 tie
+   205.00ns INFO     test                               [PASS] TC3.1 — Exact uint8 lower limit
+   215.00ns INFO     test                               [PASS] TC3.2 — Exact uint8 upper limit
+   225.00ns INFO     test                               [PASS] TC3.3 — One above uint8 upper limit
+   235.00ns INFO     test                               [PASS] TC3.4 — One below uint8 lower limit
+   245.00ns INFO     test                               [PASS] TC3.5 — Zero point reaches uint8 maximum
+   255.00ns INFO     test                               [PASS] TC3.6 — Zero point causes uint8 overflow
+   265.00ns INFO     test                               [PASS] TC3.7 — Unsigned zero-point cancellation
+   275.00ns INFO     test                               [PASS] TC3.8 — Unsigned zero-point lower overflow
+   285.00ns INFO     test                               [PASS] TC3.9 — Positive 0.5 tie
+   295.00ns INFO     test                               [PASS] TC3.10 — Positive 1.5 tie
+   305.00ns INFO     test                               [PASS] TC3.11 — Negative 0.5 tie
+   315.00ns INFO     test                               [PASS] TC3.12 — Negative 1.5 tie clips to zero
+   325.00ns INFO     test                               [PASS] TC4.1 — Exact int4 negative limit
+   335.00ns INFO     test                               [PASS] TC4.2 — One below int4 negative limit
+   345.00ns INFO     test                               [PASS] TC4.3 — Exact int4 positive limit
+   355.00ns INFO     test                               [PASS] TC4.4 — One above int4 positive limit
+   365.00ns INFO     test                               [PASS] TC4.5 — Zero point reaches int4 maximum
+   375.00ns INFO     test                               [PASS] TC4.6 — Zero point causes int4 positive overflow
+   385.00ns INFO     test                               [PASS] TC4.7 — Signed zero point reaches int4 minimum
+   395.00ns INFO     test                               [PASS] TC4.8 — Signed zero point causes int4 negative overflow
+   405.00ns INFO     test                               [PASS] TC4.9 — Positive 0.5 tie
+   415.00ns INFO     test                               [PASS] TC4.10 — Positive 1.5 tie
+   425.00ns INFO     test                               [PASS] TC4.11 — Negative 0.5 tie
+   435.00ns INFO     test                               [PASS] TC4.12 — Negative 1.5 tie
+   445.00ns INFO     test                               [PASS] TC5.1 — Exact uint4 lower limit
+   455.00ns INFO     test                               [PASS] TC5.2 — Exact uint4 upper limit
+   465.00ns INFO     test                               [PASS] TC5.3 — One above uint4 upper limit
+   475.00ns INFO     test                               [PASS] TC5.4 — One below uint4 lower limit
+   485.00ns INFO     test                               [PASS] TC5.5 — Zero point reaches uint4 maximum
+   495.00ns INFO     test                               [PASS] TC5.6 — Zero point causes uint4 overflow
+   505.00ns INFO     test                               [PASS] TC5.7 — Unsigned zero-point cancellation
+   515.00ns INFO     test                               [PASS] TC5.8 — Unsigned zero-point lower overflow
+   525.00ns INFO     test                               [PASS] TC5.9 — Positive 0.5 tie
+   535.00ns INFO     test                               [PASS] TC5.10 — Positive 1.5 tie
+   545.00ns INFO     test                               [PASS] TC5.11 — 15.5 tie saturates to uint4 maximum
+   555.00ns INFO     test                               [PASS] TC5.12 — Negative 0.5 tie
+   565.00ns INFO     test                               [PASS] TC5.13 — Negative 1.5 tie clips to zero
+   575.00ns INFO     test                               [PASS] TC6.1 — Exact int2 negative limit
+   585.00ns INFO     test                               [PASS] TC6.2 — One below int2 negative limit
+   595.00ns INFO     test                               [PASS] TC6.3 — Exact int2 positive limit
+   605.00ns INFO     test                               [PASS] TC6.4 — One above int2 positive limit
+   615.00ns INFO     test                               [PASS] TC6.5 — Signed zero point reaches int2 maximum
+   625.00ns INFO     test                               [PASS] TC6.6 — Signed zero point causes int2 positive overflow
+   635.00ns INFO     test                               [PASS] TC6.7 — Signed zero point reaches int2 minimum
+   645.00ns INFO     test                               [PASS] TC6.8 — Signed zero point causes int2 negative overflow
+   655.00ns INFO     test                               [PASS] TC6.9 — Positive 0.5 tie
+   665.00ns INFO     test                               [PASS] TC6.10 — Positive 1.5 tie saturates
+   675.00ns INFO     test                               [PASS] TC6.11 — Negative 0.5 tie
+   685.00ns INFO     test                               [PASS] TC6.12 — Negative 1.5 tie
+   695.00ns INFO     test                               [PASS] TC6.13 — Negative 3.5 tie saturates
+   705.00ns INFO     test                               [PASS] TC7.1 — Exact uint2 lower limit
+   715.00ns INFO     test                               [PASS] TC7.2 — Exact uint2 upper limit
+   725.00ns INFO     test                               [PASS] TC7.3 — One above uint2 upper limit
+   735.00ns INFO     test                               [PASS] TC7.4 — One below uint2 lower limit
+   745.00ns INFO     test                               [PASS] TC7.5 — Zero point reaches uint2 maximum
+   755.00ns INFO     test                               [PASS] TC7.6 — Zero point causes uint2 overflow
+   765.00ns INFO     test                               [PASS] TC7.7 — Unsigned zero-point cancellation
+   775.00ns INFO     test                               [PASS] TC7.8 — Unsigned zero-point lower overflow
+   785.00ns INFO     test                               [PASS] TC7.9 — Positive 0.5 tie
+   795.00ns INFO     test                               [PASS] TC7.10 — Positive 1.5 tie
+   805.00ns INFO     test                               [PASS] TC7.11 — Positive 3.5 tie saturates
+   815.00ns INFO     test                               [PASS] TC7.12 — Negative 0.5 tie
+   825.00ns INFO     test                               [PASS] TC7.13 — Negative 1.5 tie clips to zero
+   835.00ns INFO     test                               [PASS] TC8.1 — int8 RNE P0a below +0.5
+   845.00ns INFO     test                               [PASS] TC8.2 — int8 RNE P0b exact +0.5 tie
+   855.00ns INFO     test                               [PASS] TC8.3 — int8 RNE P0c above +0.5
+   865.00ns INFO     test                               [PASS] TC8.4 — int8 RNE P1a below +1.5
+   875.00ns INFO     test                               [PASS] TC8.5 — int8 RNE P1b exact +1.5 tie
+   885.00ns INFO     test                               [PASS] TC8.6 — int8 RNE P1c above +1.5
+   895.00ns INFO     test                               [PASS] TC8.7 — int8 RNE N0a inside -0.5
+   905.00ns INFO     test                               [PASS] TC8.8 — int8 RNE N0b exact -0.5 tie
+   915.00ns INFO     test                               [PASS] TC8.9 — int8 RNE N0c outside -0.5
+   925.00ns INFO     test                               [PASS] TC8.10 — int8 RNE N1a inside -1.5
+   935.00ns INFO     test                               [PASS] TC8.11 — int8 RNE N1b exact -1.5 tie
+   945.00ns INFO     test                               [PASS] TC8.12 — int8 RNE N1c outside -1.5
+   955.00ns INFO     test                               [PASS] TC8.13 — uint8 RNE P0a below +0.5
+   965.00ns INFO     test                               [PASS] TC8.14 — uint8 RNE P0b exact +0.5 tie
+   975.00ns INFO     test                               [PASS] TC8.15 — uint8 RNE P0c above +0.5
+   985.00ns INFO     test                               [PASS] TC8.16 — uint8 RNE P1a below +1.5
+   995.00ns INFO     test                               [PASS] TC8.17 — uint8 RNE P1b exact +1.5 tie
+  1005.00ns INFO     test                               [PASS] TC8.18 — uint8 RNE P1c above +1.5
+  1015.00ns INFO     test                               [PASS] TC8.19 — uint8 RNE N0a inside -0.5
+  1025.00ns INFO     test                               [PASS] TC8.20 — uint8 RNE N0b exact -0.5 tie
+  1035.00ns INFO     test                               [PASS] TC8.21 — uint8 RNE N0c outside -0.5
+  1045.00ns INFO     test                               [PASS] TC8.22 — uint8 RNE N1a inside -1.5
+  1055.00ns INFO     test                               [PASS] TC8.23 — uint8 RNE N1b exact -1.5 tie
+  1065.00ns INFO     test                               [PASS] TC8.24 — uint8 RNE N1c outside -1.5
+  1075.00ns INFO     test                               [PASS] TC8.25 — int4 RNE P0a below +0.5
+  1085.00ns INFO     test                               [PASS] TC8.26 — int4 RNE P0b exact +0.5 tie
+  1095.00ns INFO     test                               [PASS] TC8.27 — int4 RNE P0c above +0.5
+  1105.00ns INFO     test                               [PASS] TC8.28 — int4 RNE P1a below +1.5
+  1115.00ns INFO     test                               [PASS] TC8.29 — int4 RNE P1b exact +1.5 tie
+  1125.00ns INFO     test                               [PASS] TC8.30 — int4 RNE P1c above +1.5
+  1135.00ns INFO     test                               [PASS] TC8.31 — int4 RNE N0a inside -0.5
+  1145.00ns INFO     test                               [PASS] TC8.32 — int4 RNE N0b exact -0.5 tie
+  1155.00ns INFO     test                               [PASS] TC8.33 — int4 RNE N0c outside -0.5
+  1165.00ns INFO     test                               [PASS] TC8.34 — int4 RNE N1a inside -1.5
+  1175.00ns INFO     test                               [PASS] TC8.35 — int4 RNE N1b exact -1.5 tie
+  1185.00ns INFO     test                               [PASS] TC8.36 — int4 RNE N1c outside -1.5
+  1195.00ns INFO     test                               [PASS] TC8.37 — uint4 RNE P0a below +0.5
+  1205.00ns INFO     test                               [PASS] TC8.38 — uint4 RNE P0b exact +0.5 tie
+  1215.00ns INFO     test                               [PASS] TC8.39 — uint4 RNE P0c above +0.5
+  1225.00ns INFO     test                               [PASS] TC8.40 — uint4 RNE P1a below +1.5
+  1235.00ns INFO     test                               [PASS] TC8.41 — uint4 RNE P1b exact +1.5 tie
+  1245.00ns INFO     test                               [PASS] TC8.42 — uint4 RNE P1c above +1.5
+  1255.00ns INFO     test                               [PASS] TC8.43 — uint4 RNE N0a inside -0.5
+  1265.00ns INFO     test                               [PASS] TC8.44 — uint4 RNE N0b exact -0.5 tie
+  1275.00ns INFO     test                               [PASS] TC8.45 — uint4 RNE N0c outside -0.5
+  1285.00ns INFO     test                               [PASS] TC8.46 — uint4 RNE N1a inside -1.5
+  1295.00ns INFO     test                               [PASS] TC8.47 — uint4 RNE N1b exact -1.5 tie
+  1305.00ns INFO     test                               [PASS] TC8.48 — uint4 RNE N1c outside -1.5
+  1315.00ns INFO     test                               [PASS] TC8.49 — int2 RNE P0a below +0.5
+  1325.00ns INFO     test                               [PASS] TC8.50 — int2 RNE P0b exact +0.5 tie
+  1335.00ns INFO     test                               [PASS] TC8.51 — int2 RNE P0c above +0.5
+  1345.00ns INFO     test                               [PASS] TC8.52 — int2 RNE P1a below +1.5
+  1355.00ns INFO     test                               [PASS] TC8.53 — int2 RNE P1b exact +1.5 tie
+  1365.00ns INFO     test                               [PASS] TC8.54 — int2 RNE P1c above +1.5
+  1375.00ns INFO     test                               [PASS] TC8.55 — int2 RNE N0a inside -0.5
+  1385.00ns INFO     test                               [PASS] TC8.56 — int2 RNE N0b exact -0.5 tie
+  1395.00ns INFO     test                               [PASS] TC8.57 — int2 RNE N0c outside -0.5
+  1405.00ns INFO     test                               [PASS] TC8.58 — int2 RNE N1a inside -1.5
+  1415.00ns INFO     test                               [PASS] TC8.59 — int2 RNE N1b exact -1.5 tie
+  1425.00ns INFO     test                               [PASS] TC8.60 — int2 RNE N1c outside -1.5
+  1435.00ns INFO     test                               [PASS] TC8.61 — uint2 RNE P0a below +0.5
+  1445.00ns INFO     test                               [PASS] TC8.62 — uint2 RNE P0b exact +0.5 tie
+  1455.00ns INFO     test                               [PASS] TC8.63 — uint2 RNE P0c above +0.5
+  1465.00ns INFO     test                               [PASS] TC8.64 — uint2 RNE P1a below +1.5
+  1475.00ns INFO     test                               [PASS] TC8.65 — uint2 RNE P1b exact +1.5 tie
+  1485.00ns INFO     test                               [PASS] TC8.66 — uint2 RNE P1c above +1.5
+  1495.00ns INFO     test                               [PASS] TC8.67 — uint2 RNE N0a inside -0.5
+  1505.00ns INFO     test                               [PASS] TC8.68 — uint2 RNE N0b exact -0.5 tie
+  1515.00ns INFO     test                               [PASS] TC8.69 — uint2 RNE N0c outside -0.5
+  1525.00ns INFO     test                               [PASS] TC8.70 — uint2 RNE N1a inside -1.5
+  1535.00ns INFO     test                               [PASS] TC8.71 — uint2 RNE N1b exact -1.5 tie
+  1545.00ns INFO     test                               [PASS] TC8.72 — uint2 RNE N1c outside -1.5
+  1555.00ns INFO     test                               [PASS] TC9.1 — Exponent 101 below supported range
+  1565.00ns INFO     test                               [PASS] TC9.2 — Exponent 102 lower supported boundary
+  1575.00ns INFO     test                               [PASS] TC9.3 — Exponent 104 with maximum mantissa
+  1585.00ns INFO     test                               [PASS] TC9.4 — Exponent 105 scale 2^-22
+  1595.00ns INFO     test                               [PASS] TC9.5 — Exponent 126 exact 0.5 tie
+  1605.00ns INFO     test                               [PASS] TC9.6 — Exponent 127 scale 1.0
+  1615.00ns INFO     test                               [PASS] TC9.7 — Exponent 128 scale 2.0
+  1625.00ns INFO     test                               [PASS] TC9.8 — Exponent 134 upper normal boundary
+  1635.00ns INFO     test                               [PASS] TC9.9 — Exponent 135 positive uint8 early overflow
+  1645.00ns INFO     test                               [PASS] TC9.10 — Exponent 135 negative uint8 early overflow
+  1655.00ns INFO     test                               [PASS] TC9.11 — Exponent 135 positive int8 early overflow
+  1665.00ns INFO     test                               [PASS] TC9.12 — Exponent 135 negative int8 early overflow
+  1675.00ns INFO     test                               [PASS] TC10.1 — int8 positive scale sweep P1
+  1685.00ns INFO     test                               [PASS] TC10.2 — int8 positive scale sweep P2
+  1695.00ns INFO     test                               [PASS] TC10.3 — int8 positive scale sweep P3
+  1705.00ns INFO     test                               [PASS] TC10.4 — int8 positive scale sweep P4
+  1715.00ns INFO     test                               [PASS] TC10.5 — int8 positive scale sweep P5
+  1725.00ns INFO     test                               [PASS] TC10.6 — int8 positive scale sweep P6
+  1735.00ns INFO     test                               [PASS] TC10.7 — int8 positive scale sweep P7
+  1745.00ns INFO     test                               [PASS] TC10.8 — int8 positive scale sweep P8
+  1755.00ns INFO     test                               [PASS] TC10.9 — int8 positive scale sweep P9
+  1765.00ns INFO     test                               [PASS] TC10.10 — int8 positive scale sweep P10
+  1775.00ns INFO     test                               [PASS] TC10.11 — int8 positive scale sweep P11
+  1785.00ns INFO     test                               [PASS] TC10.12 — int8 positive scale sweep P12
+  1795.00ns INFO     test                               [PASS] TC10.13 — int8 positive scale sweep P13
+  1805.00ns INFO     test                               [PASS] TC10.14 — int8 positive scale sweep P14
+  1815.00ns INFO     test                               [PASS] TC10.15 — int8 positive scale sweep P15
+  1825.00ns INFO     test                               [PASS] TC10.16 — int8 positive scale sweep P16
+  1835.00ns INFO     test                               [PASS] TC10.17 — int8 negative scale sweep N1
+  1845.00ns INFO     test                               [PASS] TC10.18 — int8 negative scale sweep N2
+  1855.00ns INFO     test                               [PASS] TC10.19 — int8 negative scale sweep N3
+  1865.00ns INFO     test                               [PASS] TC10.20 — int8 negative scale sweep N4
+  1875.00ns INFO     test                               [PASS] TC10.21 — int8 negative scale sweep N5
+  1885.00ns INFO     test                               [PASS] TC10.22 — int8 negative scale sweep N6
+  1895.00ns INFO     test                               [PASS] TC10.23 — int8 negative scale sweep N7
+  1905.00ns INFO     test                               [PASS] TC10.24 — int8 negative scale sweep N8
+  1915.00ns INFO     test                               [PASS] TC10.25 — int8 negative scale sweep N9
+  1925.00ns INFO     test                               [PASS] TC10.26 — int8 negative scale sweep N10
+  1935.00ns INFO     test                               [PASS] TC10.27 — int8 negative scale sweep N11
+  1945.00ns INFO     test                               [PASS] TC10.28 — int8 negative scale sweep N12
+  1955.00ns INFO     test                               [PASS] TC10.29 — int8 negative scale sweep N13
+  1965.00ns INFO     test                               [PASS] TC10.30 — int8 negative scale sweep N14
+  1975.00ns INFO     test                               [PASS] TC10.31 — int8 negative scale sweep N15
+  1985.00ns INFO     test                               [PASS] TC10.32 — int8 negative scale sweep N16
+  1995.00ns INFO     test                               [PASS] TC11.1 — uint8 positive scale sweep P1
+  2005.00ns INFO     test                               [PASS] TC11.2 — uint8 positive scale sweep P2
+  2015.00ns INFO     test                               [PASS] TC11.3 — uint8 positive scale sweep P3
+  2025.00ns INFO     test                               [PASS] TC11.4 — uint8 positive scale sweep P4
+  2035.00ns INFO     test                               [PASS] TC11.5 — uint8 positive scale sweep P5
+  2045.00ns INFO     test                               [PASS] TC11.6 — uint8 positive scale sweep P6
+  2055.00ns INFO     test                               [PASS] TC11.7 — uint8 positive scale sweep P7
+  2065.00ns INFO     test                               [PASS] TC11.8 — uint8 positive scale sweep P8
+  2075.00ns INFO     test                               [PASS] TC11.9 — uint8 positive scale sweep P9
+  2085.00ns INFO     test                               [PASS] TC11.10 — uint8 positive scale sweep P10
+  2095.00ns INFO     test                               [PASS] TC11.11 — uint8 negative scale sweep N1
+  2105.00ns INFO     test                               [PASS] TC11.12 — uint8 negative scale sweep N2
+  2115.00ns INFO     test                               [PASS] TC11.13 — uint8 negative scale sweep N3
+  2125.00ns INFO     test                               [PASS] TC11.14 — uint8 negative scale sweep N4
+  2135.00ns INFO     test                               [PASS] TC11.15 — uint8 negative scale sweep N5
+  2145.00ns INFO     test                               [PASS] TC11.16 — uint8 negative scale sweep N6
+  2155.00ns INFO     test                               [PASS] TC11.17 — uint8 negative scale sweep N7
+  2165.00ns INFO     test                               [PASS] TC11.18 — uint8 negative scale sweep N8
+  2175.00ns INFO     test                               [PASS] TC11.19 — uint8 negative scale sweep N9
+  2185.00ns INFO     test                               [PASS] TC11.20 — uint8 negative scale sweep N10
+  2195.00ns INFO     test                               [PASS] TC12.1 — int4 positive scale sweep P1
+  2205.00ns INFO     test                               [PASS] TC12.2 — int4 positive scale sweep P2
+  2215.00ns INFO     test                               [PASS] TC12.3 — int4 positive scale sweep P3
+  2225.00ns INFO     test                               [PASS] TC12.4 — int4 positive scale sweep P4
+  2235.00ns INFO     test                               [PASS] TC12.5 — int4 positive scale sweep P5
+  2245.00ns INFO     test                               [PASS] TC12.6 — int4 positive scale sweep P6
+  2255.00ns INFO     test                               [PASS] TC12.7 — int4 positive scale sweep P7
+  2265.00ns INFO     test                               [PASS] TC12.8 — int4 positive scale sweep P8
+  2275.00ns INFO     test                               [PASS] TC12.9 — int4 positive scale sweep P9
+  2285.00ns INFO     test                               [PASS] TC12.10 — int4 positive scale sweep P10
+  2295.00ns INFO     test                               [PASS] TC12.11 — int4 negative scale sweep N1
+  2305.00ns INFO     test                               [PASS] TC12.12 — int4 negative scale sweep N2
+  2315.00ns INFO     test                               [PASS] TC12.13 — int4 negative scale sweep N3
+  2325.00ns INFO     test                               [PASS] TC12.14 — int4 negative scale sweep N4
+  2335.00ns INFO     test                               [PASS] TC12.15 — int4 negative scale sweep N5
+  2345.00ns INFO     test                               [PASS] TC12.16 — int4 negative scale sweep N6
+  2355.00ns INFO     test                               [PASS] TC12.17 — int4 negative scale sweep N7
+  2365.00ns INFO     test                               [PASS] TC12.18 — int4 negative scale sweep N8
+  2375.00ns INFO     test                               [PASS] TC12.19 — int4 negative scale sweep N9
+  2385.00ns INFO     test                               [PASS] TC12.20 — int4 negative scale sweep N10
+  2395.00ns INFO     test                               [PASS] TC13.1 — uint4 positive scale sweep P1
+  2405.00ns INFO     test                               [PASS] TC13.2 — uint4 positive scale sweep P2
+  2415.00ns INFO     test                               [PASS] TC13.3 — uint4 positive scale sweep P3
+  2425.00ns INFO     test                               [PASS] TC13.4 — uint4 positive scale sweep P4
+  2435.00ns INFO     test                               [PASS] TC13.5 — uint4 positive scale sweep P5
+  2445.00ns INFO     test                               [PASS] TC13.6 — uint4 positive scale sweep P6
+  2455.00ns INFO     test                               [PASS] TC13.7 — uint4 positive scale sweep P7
+  2465.00ns INFO     test                               [PASS] TC13.8 — uint4 positive scale sweep P8
+  2475.00ns INFO     test                               [PASS] TC13.9 — uint4 positive scale sweep P9
+  2485.00ns INFO     test                               [PASS] TC13.10 — uint4 positive scale sweep P10
+  2495.00ns INFO     test                               [PASS] TC13.11 — uint4 negative scale sweep N1
+  2505.00ns INFO     test                               [PASS] TC13.12 — uint4 negative scale sweep N2
+  2515.00ns INFO     test                               [PASS] TC13.13 — uint4 negative scale sweep N3
+  2525.00ns INFO     test                               [PASS] TC13.14 — uint4 negative scale sweep N4
+  2535.00ns INFO     test                               [PASS] TC13.15 — uint4 negative scale sweep N5
+  2545.00ns INFO     test                               [PASS] TC13.16 — uint4 negative scale sweep N6
+  2555.00ns INFO     test                               [PASS] TC13.17 — uint4 negative scale sweep N7
+  2565.00ns INFO     test                               [PASS] TC13.18 — uint4 negative scale sweep N8
+  2575.00ns INFO     test                               [PASS] TC13.19 — uint4 negative scale sweep N9
+  2585.00ns INFO     test                               [PASS] TC13.20 — uint4 negative scale sweep N10
+  2595.00ns INFO     test                               [PASS] TC14.1 — int2 positive scale sweep P1
+  2605.00ns INFO     test                               [PASS] TC14.2 — int2 positive scale sweep P2
+  2615.00ns INFO     test                               [PASS] TC14.3 — int2 positive scale sweep P3
+  2625.00ns INFO     test                               [PASS] TC14.4 — int2 positive scale sweep P4
+  2635.00ns INFO     test                               [PASS] TC14.5 — int2 positive scale sweep P5
+  2645.00ns INFO     test                               [PASS] TC14.6 — int2 positive scale sweep P6
+  2655.00ns INFO     test                               [PASS] TC14.7 — int2 positive scale sweep P7
+  2665.00ns INFO     test                               [PASS] TC14.8 — int2 positive scale sweep P8
+  2675.00ns INFO     test                               [PASS] TC14.9 — int2 positive scale sweep P9
+  2685.00ns INFO     test                               [PASS] TC14.10 — int2 positive scale sweep P10
+  2695.00ns INFO     test                               [PASS] TC14.11 — int2 negative scale sweep N1
+  2705.00ns INFO     test                               [PASS] TC14.12 — int2 negative scale sweep N2
+  2715.00ns INFO     test                               [PASS] TC14.13 — int2 negative scale sweep N3
+  2725.00ns INFO     test                               [PASS] TC14.14 — int2 negative scale sweep N4
+  2735.00ns INFO     test                               [PASS] TC14.15 — int2 negative scale sweep N5
+  2745.00ns INFO     test                               [PASS] TC14.16 — int2 negative scale sweep N6
+  2755.00ns INFO     test                               [PASS] TC14.17 — int2 negative scale sweep N7
+  2765.00ns INFO     test                               [PASS] TC14.18 — int2 negative scale sweep N8
+  2775.00ns INFO     test                               [PASS] TC14.19 — int2 negative scale sweep N9
+  2785.00ns INFO     test                               [PASS] TC14.20 — int2 negative scale sweep N10
+  2795.00ns INFO     test                               [PASS] TC15.1 — uint2 positive scale sweep P1
+  2805.00ns INFO     test                               [PASS] TC15.2 — uint2 positive scale sweep P2
+  2815.00ns INFO     test                               [PASS] TC15.3 — uint2 positive scale sweep P3
+  2825.00ns INFO     test                               [PASS] TC15.4 — uint2 positive scale sweep P4
+  2835.00ns INFO     test                               [PASS] TC15.5 — uint2 positive scale sweep P5
+  2845.00ns INFO     test                               [PASS] TC15.6 — uint2 positive scale sweep P6
+  2855.00ns INFO     test                               [PASS] TC15.7 — uint2 positive scale sweep P7
+  2865.00ns INFO     test                               [PASS] TC15.8 — uint2 positive scale sweep P8
+  2875.00ns INFO     test                               [PASS] TC15.9 — uint2 positive scale sweep P9
+  2885.00ns INFO     test                               [PASS] TC15.10 — uint2 positive scale sweep P10
+  2895.00ns INFO     test                               [PASS] TC15.11 — uint2 negative scale sweep N1
+  2905.00ns INFO     test                               [PASS] TC15.12 — uint2 negative scale sweep N2
+  2915.00ns INFO     test                               [PASS] TC15.13 — uint2 negative scale sweep N3
+  2925.00ns INFO     test                               [PASS] TC15.14 — uint2 negative scale sweep N4
+  2935.00ns INFO     test                               [PASS] TC15.15 — uint2 negative scale sweep N5
+  2945.00ns INFO     test                               [PASS] TC15.16 — uint2 negative scale sweep N6
+  2955.00ns INFO     test                               [PASS] TC15.17 — uint2 negative scale sweep N7
+  2965.00ns INFO     test                               [PASS] TC15.18 — uint2 negative scale sweep N8
+  2975.00ns INFO     test                               [PASS] TC15.19 — uint2 negative scale sweep N9
+  2985.00ns INFO     test                               [PASS] TC15.20 — uint2 negative scale sweep N10
+  2995.00ns INFO     test                               [PASS] TC16.1 — Dtype 6 exact int8 positive limit
+  3005.00ns INFO     test                               [PASS] TC16.2 — Dtype 6 int8 positive saturation
+  3015.00ns INFO     test                               [PASS] TC16.3 — Dtype 6 exact int8 negative limit
+  3025.00ns INFO     test                               [PASS] TC16.4 — Dtype 6 int8 negative saturation
+  3035.00ns INFO     test                               [PASS] TC16.5 — Dtype 7 exact uint8 upper limit
+  3045.00ns INFO     test                               [PASS] TC16.6 — Dtype 7 uint8 positive saturation
+  3055.00ns INFO     test                               [PASS] TC16.7 — Dtype 7 uint8 negative saturation
+  3056.00ns INFO     test                               ============================================================================
+  3056.00ns INFO     test                               QUANTIZER SCOREBOARD SUMMARY
+  3056.00ns INFO     test                               Total tests : 302
+  3056.00ns INFO     test                               Passed      : 302
+  3056.00ns INFO     test                               Failed      : 0
+  3056.00ns INFO     test                               ============================================================================
+  3056.00ns INFO     test                               ALL 302 QUANTIZER TESTS PASSED
+

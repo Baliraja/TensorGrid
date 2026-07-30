@@ -1,0 +1,153 @@
+                                                            Execute and score all 144 command-parser test-plan cases.
+    40.00ns INFO     test                               [PASS] TC1.1 — Asynchronous reset initializes all outputs
+   860.00ns INFO     test                               [PASS] TC2.1 — Randomized QUANTIZE
+  1190.00ns INFO     test                               [PASS] TC2.2 — Randomized LOAD_ELEMENT
+  1410.00ns INFO     test                               [PASS] TC2.3 — Randomized READ_ELEMENT
+  1520.00ns INFO     test                               [PASS] TC2.4 — Randomized ADD
+  1630.00ns INFO     test                               [PASS] TC2.5 — Randomized EL_MUL
+  1740.00ns INFO     test                               [PASS] TC2.6 — Randomized MAT_MUL
+  1960.00ns INFO     test                               [PASS] TC2.7 — Randomized DOT_PROD
+  2070.00ns INFO     test                               [PASS] TC2.8 — Randomized CLEAR_MATRIX
+  2180.00ns INFO     test                               [PASS] TC2.9 — Randomized RELU
+  2400.00ns INFO     test                               [PASS] TC2.10 — Randomized CLAMP
+  2620.00ns INFO     test                               [PASS] TC2.11 — Randomized SHIFT_ROW_COL
+  3390.00ns INFO     test                               [PASS] TC3.1 — QUANTIZE minimum field values
+  4160.00ns INFO     test                               [PASS] TC3.2 — QUANTIZE maximum raw field values
+  4930.00ns INFO     test                               [PASS] TC3.3 — QUANTIZE datatype encoding 0
+  5700.00ns INFO     test                               [PASS] TC3.4 — QUANTIZE datatype encoding 1
+  6470.00ns INFO     test                               [PASS] TC3.5 — QUANTIZE datatype encoding 2
+  7240.00ns INFO     test                               [PASS] TC3.6 — QUANTIZE datatype encoding 3
+  8010.00ns INFO     test                               [PASS] TC3.7 — QUANTIZE datatype encoding 4
+  8780.00ns INFO     test                               [PASS] TC3.8 — QUANTIZE datatype encoding 5
+  9550.00ns INFO     test                               [PASS] TC3.9 — QUANTIZE datatype encoding 6
+ 10320.00ns INFO     test                               [PASS] TC3.10 — QUANTIZE datatype encoding 7
+ 11090.00ns INFO     test                               [PASS] TC3.11 — QUANTIZE negative scale bit pattern
+ 11860.00ns INFO     test                               [PASS] TC3.12 — QUANTIZE distinct-byte scale ordering
+ 12630.00ns INFO     test                               [PASS] TC3.13 — QUANTIZE reserved bits set
+ 12960.00ns INFO     test                               [PASS] TC4.1 — LOAD minimum address/data
+ 13290.00ns INFO     test                               [PASS] TC4.2 — LOAD maximum address/data
+ 13620.00ns INFO     test                               [PASS] TC4.3 — LOAD repeated address first value
+ 13950.00ns INFO     test                               [PASS] TC4.4 — LOAD repeated address replacement
+ 14280.00ns INFO     test                               [PASS] TC4.5 — LOAD reserved bits set
+ 14500.00ns INFO     test                               [PASS] TC5.1 — READ minimum address
+ 14720.00ns INFO     test                               [PASS] TC5.2 — READ maximum address
+ 14940.00ns INFO     test                               [PASS] TC5.3 — READ reserved bits set
+ 15050.00ns INFO     test                               [PASS] TC6.1 — ADD source pair (0,0)
+ 15160.00ns INFO     test                               [PASS] TC6.2 — ADD source pair (0,1)
+ 15270.00ns INFO     test                               [PASS] TC6.3 — ADD source pair (0,2)
+ 15380.00ns INFO     test                               [PASS] TC6.4 — ADD source pair (0,3)
+ 15490.00ns INFO     test                               [PASS] TC6.5 — ADD source pair (1,0)
+ 15600.00ns INFO     test                               [PASS] TC6.6 — ADD source pair (1,1)
+ 15710.00ns INFO     test                               [PASS] TC6.7 — ADD source pair (1,2)
+ 15820.00ns INFO     test                               [PASS] TC6.8 — ADD source pair (1,3)
+ 15930.00ns INFO     test                               [PASS] TC6.9 — ADD source pair (2,0)
+ 16040.00ns INFO     test                               [PASS] TC6.10 — ADD source pair (2,1)
+ 16150.00ns INFO     test                               [PASS] TC6.11 — ADD source pair (2,2)
+ 16260.00ns INFO     test                               [PASS] TC6.12 — ADD source pair (2,3)
+ 16370.00ns INFO     test                               [PASS] TC6.13 — ADD source pair (3,0)
+ 16480.00ns INFO     test                               [PASS] TC6.14 — ADD source pair (3,1)
+ 16590.00ns INFO     test                               [PASS] TC6.15 — ADD source pair (3,2)
+ 16700.00ns INFO     test                               [PASS] TC6.16 — ADD source pair (3,3)
+ 16810.00ns INFO     test                               [PASS] TC7.1 — EL_MUL source pair (0,0)
+ 16920.00ns INFO     test                               [PASS] TC7.2 — EL_MUL source pair (0,1)
+ 17030.00ns INFO     test                               [PASS] TC7.3 — EL_MUL source pair (0,2)
+ 17140.00ns INFO     test                               [PASS] TC7.4 — EL_MUL source pair (0,3)
+ 17250.00ns INFO     test                               [PASS] TC7.5 — EL_MUL source pair (1,0)
+ 17360.00ns INFO     test                               [PASS] TC7.6 — EL_MUL source pair (1,1)
+ 17470.00ns INFO     test                               [PASS] TC7.7 — EL_MUL source pair (1,2)
+ 17580.00ns INFO     test                               [PASS] TC7.8 — EL_MUL source pair (1,3)
+ 17690.00ns INFO     test                               [PASS] TC7.9 — EL_MUL source pair (2,0)
+ 17800.00ns INFO     test                               [PASS] TC7.10 — EL_MUL source pair (2,1)
+ 17910.00ns INFO     test                               [PASS] TC7.11 — EL_MUL source pair (2,2)
+ 18020.00ns INFO     test                               [PASS] TC7.12 — EL_MUL source pair (2,3)
+ 18130.00ns INFO     test                               [PASS] TC7.13 — EL_MUL source pair (3,0)
+ 18240.00ns INFO     test                               [PASS] TC7.14 — EL_MUL source pair (3,1)
+ 18350.00ns INFO     test                               [PASS] TC7.15 — EL_MUL source pair (3,2)
+ 18460.00ns INFO     test                               [PASS] TC7.16 — EL_MUL source pair (3,3)
+ 18570.00ns INFO     test                               [PASS] TC8.1 — MAT_MUL source pair (0,0)
+ 18680.00ns INFO     test                               [PASS] TC8.2 — MAT_MUL source pair (0,1)
+ 18790.00ns INFO     test                               [PASS] TC8.3 — MAT_MUL source pair (0,2)
+ 18900.00ns INFO     test                               [PASS] TC8.4 — MAT_MUL source pair (0,3)
+ 19010.00ns INFO     test                               [PASS] TC8.5 — MAT_MUL source pair (1,0)
+ 19120.00ns INFO     test                               [PASS] TC8.6 — MAT_MUL source pair (1,1)
+ 19230.00ns INFO     test                               [PASS] TC8.7 — MAT_MUL source pair (1,2)
+ 19340.00ns INFO     test                               [PASS] TC8.8 — MAT_MUL source pair (1,3)
+ 19450.00ns INFO     test                               [PASS] TC8.9 — MAT_MUL source pair (2,0)
+ 19560.00ns INFO     test                               [PASS] TC8.10 — MAT_MUL source pair (2,1)
+ 19670.00ns INFO     test                               [PASS] TC8.11 — MAT_MUL source pair (2,2)
+ 19780.00ns INFO     test                               [PASS] TC8.12 — MAT_MUL source pair (2,3)
+ 19890.00ns INFO     test                               [PASS] TC8.13 — MAT_MUL source pair (3,0)
+ 20000.00ns INFO     test                               [PASS] TC8.14 — MAT_MUL source pair (3,1)
+ 20110.00ns INFO     test                               [PASS] TC8.15 — MAT_MUL source pair (3,2)
+ 20220.00ns INFO     test                               [PASS] TC8.16 — MAT_MUL source pair (3,3)
+ 20440.00ns INFO     test                               [PASS] TC9.1 — DOT_PROD source pair (0,0) to [0,0]
+ 20660.00ns INFO     test                               [PASS] TC9.2 — DOT_PROD source pair (0,1) to [0,0]
+ 20880.00ns INFO     test                               [PASS] TC9.3 — DOT_PROD source pair (0,2) to [0,0]
+ 21100.00ns INFO     test                               [PASS] TC9.4 — DOT_PROD source pair (0,3) to [0,0]
+ 21320.00ns INFO     test                               [PASS] TC9.5 — DOT_PROD source pair (1,0) to [0,0]
+ 21540.00ns INFO     test                               [PASS] TC9.6 — DOT_PROD source pair (1,1) to [0,0]
+ 21760.00ns INFO     test                               [PASS] TC9.7 — DOT_PROD source pair (1,2) to [0,0]
+ 21980.00ns INFO     test                               [PASS] TC9.8 — DOT_PROD source pair (1,3) to [0,0]
+ 22200.00ns INFO     test                               [PASS] TC9.9 — DOT_PROD source pair (2,0) to [0,0]
+ 22420.00ns INFO     test                               [PASS] TC9.10 — DOT_PROD source pair (2,1) to [0,0]
+ 22640.00ns INFO     test                               [PASS] TC9.11 — DOT_PROD source pair (2,2) to [0,0]
+ 22860.00ns INFO     test                               [PASS] TC9.12 — DOT_PROD source pair (2,3) to [0,0]
+ 23080.00ns INFO     test                               [PASS] TC9.13 — DOT_PROD source pair (3,0) to [0,0]
+ 23300.00ns INFO     test                               [PASS] TC9.14 — DOT_PROD source pair (3,1) to [0,0]
+ 23520.00ns INFO     test                               [PASS] TC9.15 — DOT_PROD source pair (3,2) to [0,0]
+ 23740.00ns INFO     test                               [PASS] TC9.16 — DOT_PROD source pair (3,3) to [0,0]
+ 23960.00ns INFO     test                               [PASS] TC9.17 — DOT_PROD maximum destination row/column
+ 24070.00ns INFO     test                               [PASS] TC10.1 — CLEAR matrix 0, signed_mode=0
+ 24180.00ns INFO     test                               [PASS] TC10.2 — CLEAR matrix 0, signed_mode=1
+ 24290.00ns INFO     test                               [PASS] TC10.3 — CLEAR matrix 1, signed_mode=0
+ 24400.00ns INFO     test                               [PASS] TC10.4 — CLEAR matrix 1, signed_mode=1
+ 24510.00ns INFO     test                               [PASS] TC10.5 — CLEAR matrix 2, signed_mode=0
+ 24620.00ns INFO     test                               [PASS] TC10.6 — CLEAR matrix 2, signed_mode=1
+ 24730.00ns INFO     test                               [PASS] TC10.7 — CLEAR matrix 3, signed_mode=0
+ 24840.00ns INFO     test                               [PASS] TC10.8 — CLEAR matrix 3, signed_mode=1
+ 24950.00ns INFO     test                               [PASS] TC11.1 — RELU matrix 0
+ 25060.00ns INFO     test                               [PASS] TC11.2 — RELU matrix 1
+ 25170.00ns INFO     test                               [PASS] TC11.3 — RELU matrix 2
+ 25280.00ns INFO     test                               [PASS] TC11.4 — RELU matrix 3
+ 25390.00ns INFO     test                               [PASS] TC11.5 — RELU reserved bits set
+ 25610.00ns INFO     test                               [PASS] TC12.1 — CLAMP matrix 0 to 0x00
+ 25830.00ns INFO     test                               [PASS] TC12.2 — CLAMP matrix 0 to 0xFF
+ 26050.00ns INFO     test                               [PASS] TC12.3 — CLAMP matrix 1 to 0x00
+ 26270.00ns INFO     test                               [PASS] TC12.4 — CLAMP matrix 1 to 0xFF
+ 26490.00ns INFO     test                               [PASS] TC12.5 — CLAMP matrix 2 to 0x00
+ 26710.00ns INFO     test                               [PASS] TC12.6 — CLAMP matrix 2 to 0xFF
+ 26930.00ns INFO     test                               [PASS] TC12.7 — CLAMP matrix 3 to 0x00
+ 27150.00ns INFO     test                               [PASS] TC12.8 — CLAMP matrix 3 to 0xFF
+ 27370.00ns INFO     test                               [PASS] TC12.9 — CLAMP reserved bits set
+ 27590.00ns INFO     test                               [PASS] TC13.1 — Matrix 0, column shift by 0
+ 27810.00ns INFO     test                               [PASS] TC13.2 — Matrix 0, column shift by 3
+ 28030.00ns INFO     test                               [PASS] TC13.3 — Matrix 0, row shift by 0
+ 28250.00ns INFO     test                               [PASS] TC13.4 — Matrix 0, row shift by 3
+ 28470.00ns INFO     test                               [PASS] TC13.5 — Matrix 1, column shift by 0
+ 28690.00ns INFO     test                               [PASS] TC13.6 — Matrix 1, column shift by 3
+ 28910.00ns INFO     test                               [PASS] TC13.7 — Matrix 1, row shift by 0
+ 29130.00ns INFO     test                               [PASS] TC13.8 — Matrix 1, row shift by 3
+ 29350.00ns INFO     test                               [PASS] TC13.9 — Matrix 2, column shift by 0
+ 29570.00ns INFO     test                               [PASS] TC13.10 — Matrix 2, column shift by 3
+ 29790.00ns INFO     test                               [PASS] TC13.11 — Matrix 2, row shift by 0
+ 30010.00ns INFO     test                               [PASS] TC13.12 — Matrix 2, row shift by 3
+ 30230.00ns INFO     test                               [PASS] TC13.13 — Matrix 3, column shift by 0
+ 30450.00ns INFO     test                               [PASS] TC13.14 — Matrix 3, column shift by 3
+ 30670.00ns INFO     test                               [PASS] TC13.15 — Matrix 3, row shift by 0
+ 30890.00ns INFO     test                               [PASS] TC13.16 — Matrix 3, row shift by 3
+ 31110.00ns INFO     test                               [PASS] TC13.17 — SHIFT reserved bits set
+ 31220.00ns INFO     test                               [PASS] TC14.1 — Unsupported command byte 0x00
+ 31330.00ns INFO     test                               [PASS] TC14.2 — Unsupported command byte 0xC0
+ 31440.00ns INFO     test                               [PASS] TC14.3 — Unsupported command byte 0xD5
+ 31550.00ns INFO     test                               [PASS] TC14.4 — Unsupported command byte 0xEA
+ 31660.00ns INFO     test                               [PASS] TC14.5 — Unsupported command byte 0xFF
+ 32160.00ns INFO     test                               [PASS] TC15.1 — Reset discards a partial QUANTIZE packet and parser accepts ADD
+ 32220.00ns INFO     test                               [PASS] TC16.1 — UART data changes are ignored when i_uart_rx_new is low
+ 32220.00ns INFO     test                               ========================================================================
+ 32220.00ns INFO     test                               COMMAND PARSER SCOREBOARD SUMMARY
+ 32220.00ns INFO     test                               Total tests : 144
+ 32220.00ns INFO     test                               Passed      : 144
+ 32220.00ns INFO     test                               Failed      : 0
+ 32220.00ns INFO     test                               ========================================================================
+ 32220.00ns INFO     test                               ALL 144 COMMAND PARSER TESTS PASSED
+
