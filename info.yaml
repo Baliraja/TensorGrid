@@ -22,7 +22,7 @@ project:
 
   title: "Parametrizable accuracy-aware TPU"             # Project title (e.g. "Simple CPU", "PLL", "ADC")
 
-  team: "A37TensorGrid"                      # Your Team name
+  team: "A37 TensorGrid"                      # Your Team name
 
   discord: "Baliraja, bharadwaajak"                   # Optional: Discord username (for support / communication)
 
