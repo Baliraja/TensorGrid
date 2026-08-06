@@ -1,0 +1,32 @@
+Yosys 0.67+ (git sha1 b88b73a99, Release, GNU /usr/bin/c++ 15.2.0) [github.com/The-OpenROAD-Project/yosys at HEAD]
+Using ABC speed script.
+Extracting clock period from SDC file: ./results/gf180/integration_final/base/clock_period.txt
+Setting clock period to 40.0
+1. Executing Liberty frontend: /mnt/c/Users/balir/ChipathonTest/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+2. Executing Liberty frontend: /mnt/c/Users/balir/ChipathonTest/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+3. Executing Verilog-2005 frontend: /mnt/c/Users/balir/ChipathonTest/OpenROAD-flow-scripts/flow/designs/gf180/integration_final/integration_final_synth.v
+4. Executing HIERARCHY pass (managing design hierarchy).
+5. Executing AST frontend in derive mode using pre-parsed AST for module `\integration_final'.
+5.1. Analyzing design hierarchy..
+5.2. Executing AST frontend in derive mode using pre-parsed AST for module `\uartTopBaseExt'.
+5.3. Executing AST frontend in derive mode using pre-parsed AST for module `\$paramod\integration_minus_UART\GRID_SIZE=s32'00000000000000000000000000000011'.
+5.4. Analyzing design hierarchy..
+5.5. Executing AST frontend in derive mode using pre-parsed AST for module `\$paramod\reg_bank\GRID_SIZE=s32'00000000000000000000000000000011'.
+5.6. Executing AST frontend in derive mode using pre-parsed AST for module `\quantizer'.
+5.7. Executing AST frontend in derive mode using pre-parsed AST for module `\$paramod\MAC_grid\GRID_SIZE=s32'00000000000000000000000000000011'.
+5.8. Executing AST frontend in derive mode using pre-parsed AST for module `\$paramod\command_parser\GRID_SIZE=s32'00000000000000000000000000000011'.
+5.9. Executing AST frontend in derive mode using pre-parsed AST for module `\uartTx'.
+5.10. Executing AST frontend in derive mode using pre-parsed AST for module `\uartRx'.
+5.11. Executing AST frontend in derive mode using pre-parsed AST for module `\baudGenExt'.
+5.12. Analyzing design hierarchy..
+5.13. Executing AST frontend in derive mode using pre-parsed AST for module `\int_MAC'.
+5.14. Analyzing design hierarchy..
+5.15. Analyzing design hierarchy..
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+7. Executing RTLIL backend.
+End of script. Logfile hash: 927b8751d3, time: 2.18s, user: 1.05s, system: 0.20s, MEM: 214.02 MB peak
+Yosys 0.67+ (git sha1 b88b73a99, Release, GNU /usr/bin/c++ 15.2.0) [github.com/The-OpenROAD-Project/yosys at HEAD]
+Time spent: 47% 1x hierarchy (0 sec), 24% 2x read_verilog (0 sec), ...
+Elapsed time: 0:02.29[h:]min:sec. CPU time: user 1.09 sys 0.21 (56%). Peak memory: 223012KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+1_1_yosys_canonicalize    .rtlil          2            217 1cbf32c097985f60a58e

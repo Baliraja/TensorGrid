@@ -1,0 +1,64 @@
+OpenROAD 26Q3-771-g7cfb2105c9 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 28 thread(s).
+read_liberty /mnt/c/Users/balir/ChipathonTest/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+read_db ./results/gf180/integration_final/base/3_3_place_gp.odb
+read_sdc ./results/gf180/integration_final/base/2_floorplan.sdc
+source /mnt/c/Users/balir/ChipathonTest/OpenROAD-flow-scripts/flow/platforms/gf180/setRC.tcl
+estimate_parasitics -placement
+Perform buffer insertion and gate resizing...
+repair_design -verbose
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |     33397
+     1000 |     +0.0% |       0 |       0 |             0 |     32397
+     2000 |     +0.0% |       0 |       0 |             0 |     31397
+     3000 |     +0.0% |       0 |       0 |             0 |     30397
+     4000 |     +0.0% |       0 |       0 |             0 |     29397
+     5000 |     +0.0% |       0 |       0 |             0 |     28397
+     6000 |     +0.0% |       0 |       0 |             0 |     27397
+     7000 |     +0.0% |       0 |       0 |             0 |     26397
+     8000 |     +0.0% |       0 |       0 |             0 |     25397
+     9000 |     +0.0% |       0 |       0 |             0 |     24397
+    10000 |     +0.0% |       0 |       0 |             0 |     23397
+    11000 |     +0.0% |       0 |       0 |             0 |     22397
+    12000 |     +0.0% |       0 |       0 |             0 |     21397
+    13000 |     +0.0% |       0 |       0 |             0 |     20397
+    14000 |     +0.0% |       0 |       0 |             0 |     19397
+    15000 |     +0.0% |       0 |       0 |             0 |     18397
+    16000 |     +0.0% |       0 |       0 |             0 |     17397
+    17000 |     +0.0% |       0 |       0 |             0 |     16397
+    18000 |     +0.0% |       0 |       0 |             0 |     15397
+    19000 |     +0.0% |       0 |       0 |             0 |     14397
+    20000 |     +0.0% |       0 |       0 |             0 |     13397
+    21000 |     +0.0% |       0 |       0 |             0 |     12397
+    22000 |     +0.0% |       0 |       0 |             0 |     11397
+    23000 |     +0.0% |       0 |       0 |             0 |     10397
+    24000 |     +0.0% |       0 |       0 |             0 |      9397
+    25000 |     +0.0% |       0 |       0 |             0 |      8397
+    26000 |     +0.0% |       0 |       0 |             0 |      7397
+    27000 |     +0.0% |       0 |       0 |             0 |      6397
+    28000 |     +0.0% |       0 |       0 |             0 |      5397
+    29000 |     +0.0% |       0 |       0 |             0 |      4397
+    30000 |     +0.0% |       0 |       0 |             0 |      3397
+    31000 |     +0.0% |       0 |       0 |             0 |      2397
+    32000 |     +0.0% |       0 |       0 |             0 |      1397
+    33000 |     +0.0% |       0 |       0 |             0 |       397
+    final |     +0.0% |       0 |       0 |             0 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0504] Runtime: 1.77s
+Floating nets: 
+Report metrics stage 3, resizer...
+
+==========================================================================
+resizer report_design_area
+--------------------------------------------------------------------------
+Design area 773253 um^2 48% utilization.
+Instance count before 35414, after 35414
+Pin count before 116223, after 116223
+write_db ./results/gf180/integration_final/base/3_4_place_resized.odb
+Elapsed time: 0:15.00[h:]min:sec. CPU time: user 11.06 sys 9.43 (136%). Peak memory: 318580KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+3_4_place_resized         .odb           15            311 32ff64b463a00417c429

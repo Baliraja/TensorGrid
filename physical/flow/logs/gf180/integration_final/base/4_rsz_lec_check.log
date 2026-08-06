@@ -1,0 +1,88 @@
+[2026-08-03 11:39:17.941] [miter_logger] [info] MiterStrategy::run starting
+[2026-08-03 11:39:17.942] [miter_logger] [info] Collecting POs for design 0: integration_final
+
+[2026-08-03 11:39:18.004] [miter_logger] [info] Collected 1428 PIs for design 0
+
+[2026-08-03 11:39:18.005] [miter_logger] [info] Collected 2561 POs for design 0
+
+[2026-08-03 11:39:18.007] [miter_logger] [info] design 0 PI summary by model/term (1428 total terminals, 10 unique rows):
+| Model                             | Term      | Count |
+|-----------------------------------|-----------|-------|
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_1 | Q         |  1233 |
+| gf180mcu_fd_sc_mcu9t5v0__tiel     | ZN        |   137 |
+| gf180mcu_fd_sc_mcu9t5v0__dffq_1   | Q         |    38 |
+| gf180mcu_fd_sc_mcu9t5v0__tieh     | Z         |     8 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_4 | Q         |     4 |
+| gf180mcu_fd_sc_mcu9t5v0__dffsnq_1 | Q         |     3 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_2 | Q         |     2 |
+| integration_final                 | i_clk     |     1 |
+| integration_final                 | i_rst_n   |     1 |
+| integration_final                 | i_uart_rx |     1 |
+
+[2026-08-03 11:39:18.009] [miter_logger] [info] design 0 PO summary by model/term (2561 total terminals, 11 unique rows):
+| Model                             | Term      | Count |
+|-----------------------------------|-----------|-------|
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_1 | CLK       |  1233 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_1 | D         |  1233 |
+| gf180mcu_fd_sc_mcu9t5v0__dffq_1   | CLK       |    38 |
+| gf180mcu_fd_sc_mcu9t5v0__dffq_1   | D         |    38 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_4 | CLK       |     4 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_4 | D         |     4 |
+| gf180mcu_fd_sc_mcu9t5v0__dffsnq_1 | CLK       |     3 |
+| gf180mcu_fd_sc_mcu9t5v0__dffsnq_1 | D         |     3 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_2 | CLK       |     2 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_2 | D         |     2 |
+| integration_final                 | o_uart_tx |     1 |
+
+[2026-08-03 11:39:18.011] [miter_logger] [info] Collecting POs for design 1: integration_final
+
+[2026-08-03 11:39:18.048] [miter_logger] [info] Collected 1428 PIs for design 1
+
+[2026-08-03 11:39:18.049] [miter_logger] [info] Collected 2561 POs for design 1
+
+[2026-08-03 11:39:18.051] [miter_logger] [info] design 1 PI summary by model/term (1428 total terminals, 10 unique rows):
+| Model                             | Term      | Count |
+|-----------------------------------|-----------|-------|
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_1 | Q         |  1233 |
+| gf180mcu_fd_sc_mcu9t5v0__tiel     | ZN        |   137 |
+| gf180mcu_fd_sc_mcu9t5v0__dffq_1   | Q         |    38 |
+| gf180mcu_fd_sc_mcu9t5v0__tieh     | Z         |     8 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_4 | Q         |     4 |
+| gf180mcu_fd_sc_mcu9t5v0__dffsnq_1 | Q         |     3 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_2 | Q         |     2 |
+| integration_final                 | i_clk     |     1 |
+| integration_final                 | i_rst_n   |     1 |
+| integration_final                 | i_uart_rx |     1 |
+
+[2026-08-03 11:39:18.053] [miter_logger] [info] design 1 PO summary by model/term (2561 total terminals, 11 unique rows):
+| Model                             | Term      | Count |
+|-----------------------------------|-----------|-------|
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_1 | CLK       |  1233 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_1 | D         |  1233 |
+| gf180mcu_fd_sc_mcu9t5v0__dffq_1   | CLK       |    38 |
+| gf180mcu_fd_sc_mcu9t5v0__dffq_1   | D         |    38 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_4 | CLK       |     4 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_4 | D         |     4 |
+| gf180mcu_fd_sc_mcu9t5v0__dffsnq_1 | CLK       |     3 |
+| gf180mcu_fd_sc_mcu9t5v0__dffsnq_1 | D         |     3 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_2 | CLK       |     2 |
+| gf180mcu_fd_sc_mcu9t5v0__dffrnq_2 | D         |     2 |
+| integration_final                 | o_uart_tx |     1 |
+
+[2026-08-03 11:39:18.054] [miter_logger] [info] normalizeInputs: starting
+[2026-08-03 11:39:18.059] [miter_logger] [info] size of common inputs: 1428
+[2026-08-03 11:39:18.061] [miter_logger] [info] size of diff0 inputs: 0
+[2026-08-03 11:39:18.062] [miter_logger] [info] size of diff1 inputs: 0
+[2026-08-03 11:39:18.064] [miter_logger] [info] normalizeOutputs: starting
+[2026-08-03 11:39:18.067] [miter_logger] [info] size of common outputs: 2561
+[2026-08-03 11:39:18.069] [miter_logger] [info] size of diff0 outputs: 0
+[2026-08-03 11:39:18.070] [miter_logger] [info] size of diff1 outputs: 0
+[2026-08-03 11:39:18.071] [miter_logger] [info] size of PIs in circuit 0: 1428
+[2026-08-03 11:39:18.073] [miter_logger] [info] size of PIs in circuit 1: 1428
+[2026-08-03 11:39:18.074] [miter_logger] [info] size of POs in circuit 0: 2561
+[2026-08-03 11:39:18.076] [miter_logger] [info] size of POs in circuit 1: 2561
+[2026-08-03 11:39:18.389] [miter_logger] [info] Building miter expression
+[2026-08-03 11:39:18.391] [miter_logger] [info] Finished building miter expression
+[2026-08-03 11:39:18.396] [miter_logger] [info] Starting solver
+[2026-08-03 11:39:18.396] [miter_logger] [info] SAT solver finished: UNSAT
+[2026-08-03 11:39:18.396] [miter_logger] [info] Circuits are IDENTICAL
