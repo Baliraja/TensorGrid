@@ -1,0 +1,16 @@
+OpenROAD 26Q3-771-g7cfb2105c9 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 28 thread(s).
+read_liberty /mnt/c/Users/balir/ChipathonTest/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+read_db ./results/gf180/integration_final/base/2_2_floorplan_macro.odb
+read_sdc ./results/gf180/integration_final/base/2_1_floorplan.sdc
+source /mnt/c/Users/balir/ChipathonTest/OpenROAD-flow-scripts/flow/platforms/gf180/setRC.tcl
+[INFO TAP-0004] Inserted 502 endcaps.
+[INFO TAP-0005] Inserted 1518 tapcells.
+Design area 739943 um^2 46% utilization.
+write_db ./results/gf180/integration_final/base/2_3_floorplan_tapcell.odb
+Elapsed time: 0:04.84[h:]min:sec. CPU time: user 0.53 sys 0.28 (16%). Peak memory: 166344KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+2_3_floorplan_tapcell     .odb            4            162 9639e6169da0d0bd6e11

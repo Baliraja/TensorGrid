@@ -1,0 +1,313 @@
+OpenROAD 26Q3-771-g7cfb2105c9 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 28 thread(s).
+read_liberty /mnt/c/Users/balir/ChipathonTest/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib.gz
+read_db ./results/gf180/integration_final/base/4_cts.odb
+read_sdc ./results/gf180/integration_final/base/4_cts.sdc
+source /mnt/c/Users/balir/ChipathonTest/OpenROAD-flow-scripts/flow/platforms/gf180/setRC.tcl
+pin_access
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via4
+
+Units:                2000
+Number of layers:     11
+Number of macros:     229
+Number of vias:       64
+Number of viarulegen: 18
+
+[INFO DRT-0150] Reading design.
+[WARNING DRT-0120] Large net net145 has 317 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net integration_inst.quant_ip_reset has 161 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net648 has 111 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net956 has 294 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net957 has 223 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net1310 has 110 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net1325 has 328 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net953 has 104 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net820 has 290 pins which may impact routing performance. Consider optimization.
+[WARNING DRT-0120] Large net net863 has 101 pins which may impact routing performance. Consider optimization.
+
+Design:                   integration_final
+Die area:                 ( 0 0 ) ( 2545660 2545660 )
+Number of track patterns: 10
+Number of DEF vias:       0
+Number of components:     35525
+Number of terminals:      6
+Number of snets:          2
+Number of nets:           33456
+
+[INFO DRT-0167] List of default vias:
+  Layer Via2
+    default via: Via2_VH
+  Layer Via3
+    default via: Via3_HV
+  Layer Via4
+    default via: Via4_1_VH
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 148.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete Poly2.
+[INFO DRT-0024]   Complete CON.
+[INFO DRT-0024]   Complete Metal1.
+[INFO DRT-0024]   Complete Via1.
+[INFO DRT-0024]   Complete Metal2.
+[INFO DRT-0024]   Complete Via2.
+[INFO DRT-0024]   Complete Metal3.
+[INFO DRT-0024]   Complete Via3.
+[INFO DRT-0024]   Complete Metal4.
+[INFO DRT-0024]   Complete Via4.
+[INFO DRT-0024]   Complete Metal5.
+[INFO DRT-0033] Poly2 shape region query size = 0.
+[INFO DRT-0033] CON shape region query size = 0.
+[INFO DRT-0033] Metal1 shape region query size = 526874.
+[INFO DRT-0033] Via1 shape region query size = 70560.
+[INFO DRT-0033] Metal2 shape region query size = 261072.
+[INFO DRT-0033] Via2 shape region query size = 246960.
+[INFO DRT-0033] Metal3 shape region query size = 493923.
+[INFO DRT-0033] Via3 shape region query size = 246960.
+[INFO DRT-0033] Metal4 shape region query size = 247801.
+[INFO DRT-0033] Via4 shape region query size = 12544.
+[INFO DRT-0033] Metal5 shape region query size = 840.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0078]   Complete 785 pins.
+[INFO DRT-0079]   Complete 100 unique inst patterns.
+[INFO DRT-0081]   Complete 144 unique inst patterns.
+[INFO DRT-0082]   Complete 10000 groups.
+[INFO DRT-0082]   Complete 20000 groups.
+[INFO DRT-0084]   Complete 21054 groups.
+#scanned instances     = 35525
+#unique  instances     = 148
+#stdCellGenAp          = 4576
+#stdCellValidPlanarAp  = 0
+#stdCellValidViaAp     = 3309
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 116248
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:01:49, elapsed time = 00:00:04, memory = 375.11 (MB), peak = 374.06 (MB)
+Took 5 seconds: pin_access
+global_route -congestion_report_file ./reports/gf180/integration_final/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: Metal5
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.5600  line-2-Via Pitch: 0.4750
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.5600  line-2-Via Pitch: 0.5600
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.9000  line-2-Via Pitch: 0.8200
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 60 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 328
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical       300806        218472          27.37%
+Metal3     Horizontal     326744        237222          27.40%
+Metal4     Vertical       273824        199659          27.08%
+Metal5     Horizontal     189600        128850          32.04%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove congestion.
+[INFO GRT-0102] Start extra iteration 1/30
+[INFO GRT-0102] Start extra iteration 2/30
+[INFO GRT-0102] Start extra iteration 3/30
+[INFO GRT-0102] Start extra iteration 4/30
+[INFO GRT-0197] Via related to pin nodes: 208600
+[INFO GRT-0198] Via related Steiner nodes: 5414
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 268883
+[INFO GRT-0112] Final usage 3D: 1127389
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Congestion
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2          218472        127899           58.54%             0 /  0 /  0
+Metal3          237222        121113           51.05%             0 /  0 /  0
+Metal4          199659         45236           22.66%             0 /  0 /  0
+Metal5          128850         26492           20.56%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           784203        320740           40.90%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 3539298 um
+[INFO GRT-0014] Routed nets: 33456
+[INFO GRT-0303] Global routing runtime = 00:00:04
+Took 5 seconds: global_route -congestion_report_file ./reports/gf180/integration_final/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
+[WARNING STA-0450] virtual clock vclk_core_clock can not be propagated.
+estimate_parasitics -global_routing
+Perform buffer insertion and gate resizing...
+repair_design -verbose
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |     33508
+     1000 |     +0.0% |       0 |       0 |             0 |     32508
+     2000 |     +0.0% |       0 |       0 |             0 |     31508
+     3000 |     +0.0% |       0 |       0 |             0 |     30508
+     4000 |     +0.0% |       0 |       0 |             0 |     29508
+     5000 |     +0.0% |       0 |       0 |             0 |     28508
+     6000 |     +0.0% |       0 |       0 |             0 |     27508
+     7000 |     +0.0% |       0 |       0 |             0 |     26508
+     8000 |     +0.0% |       0 |       0 |             0 |     25508
+     9000 |     +0.0% |       0 |       0 |             0 |     24508
+    10000 |     +0.0% |       0 |       0 |             0 |     23508
+    11000 |     +0.0% |       0 |       0 |             0 |     22508
+    12000 |     +0.0% |       0 |       0 |             0 |     21508
+    13000 |     +0.0% |       0 |       0 |             0 |     20508
+    14000 |     +0.0% |       0 |       0 |             0 |     19508
+    15000 |     +0.0% |       0 |       0 |             0 |     18508
+    16000 |     +0.0% |       0 |       0 |             0 |     17508
+    17000 |     +0.0% |       0 |       0 |             0 |     16508
+    18000 |     +0.0% |       0 |       0 |             0 |     15508
+    19000 |     +0.0% |       0 |       0 |             0 |     14508
+    20000 |     +0.0% |       0 |       0 |             0 |     13508
+    21000 |     +0.0% |       0 |       0 |             0 |     12508
+    22000 |     +0.0% |       0 |       0 |             0 |     11508
+    23000 |     +0.0% |       0 |       0 |             0 |     10508
+    24000 |     +0.0% |       0 |       1 |             1 |      9508
+    25000 |     +0.0% |       0 |       1 |             1 |      8508
+    26000 |     +0.0% |       0 |       2 |             2 |      7508
+    27000 |     +0.0% |       0 |       2 |             2 |      6508
+    28000 |     +0.0% |       0 |       2 |             2 |      5508
+    29000 |     +0.0% |       0 |       2 |             2 |      4508
+    30000 |     +0.0% |       1 |       2 |             3 |      3508
+    31000 |     +0.0% |       1 |       2 |             3 |      2508
+    32000 |     +0.0% |       1 |       2 |             3 |      1508
+    33000 |     +0.0% |       1 |       2 |             3 |       508
+    final |     +0.0% |       1 |       2 |             3 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 1 slew violations.
+[INFO RSZ-0036] Found 2 capacitance violations.
+[INFO RSZ-0039] Resized 1 instances.
+[INFO RSZ-0038] Inserted 2 buffers in 3 nets.
+[INFO RSZ-0504] Runtime: 2.55s
+global_route -start_incremental
+detailed_placement
+[INFO DPL-0006] Core area: 1607410.43 um^2
+[INFO DPL-0007] Movable instances area: 776518.44 um^2
+[INFO DPL-0008] Fixed instances area within core: 11402.50 um^2
+[INFO DPL-0009] Utilization: 49.0%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 35527 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |          0 |         0 |         0
+Negotiation phase 1 converged at iteration 0.
+[INFO DPL-0500] Runtime: 0.16s
+Placement Analysis
+---------------------------------
+total displacement         23.5 u
+average displacement        0.0 u
+max displacement           13.4 u
+original HPWL         2085769.4 u
+legalized HPWL        2085773.9 u
+delta HPWL                    0 %
+
+global_route -end_incremental -congestion_report_file ./reports/gf180/integration_final/base/congestion_post_repair_design.rpt
+Repair setup and hold violations...
+estimate_parasitics -global_routing
+repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -verbose
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
+[INFO RSZ-0505] Runtime: 0.82s
+[INFO RSZ-0033] No hold violations found.
+[INFO RSZ-0506] Runtime: 0.18s
+global_route -start_incremental
+detailed_placement
+[INFO DPL-0006] Core area: 1607410.43 um^2
+[INFO DPL-0007] Movable instances area: 776518.44 um^2
+[INFO DPL-0008] Fixed instances area within core: 11402.50 um^2
+[INFO DPL-0009] Utilization: 49.0%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 35527 cells
+[INFO DPL-0500] Runtime: 0.14s
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL         2085773.9 u
+legalized HPWL        2085773.9 u
+delta HPWL                    0 %
+
+check_placement -verbose
+global_route -end_incremental -congestion_report_file ./reports/gf180/integration_final/base/congestion_post_repair_timing.rpt
+estimate_parasitics -global_routing
+global_route -start_incremental
+global_route -end_incremental -congestion_report_file ./reports/gf180/integration_final/base/congestion_post_recover_power.rpt
+Repair antennas...
+[INFO GRT-0012] Found 16 antenna violations.
+[INFO GRT-0302] Inserted 10 jumpers for 7 nets.
+[INFO GRT-0012] Found 9 antenna violations.
+[INFO DPL-0006] Core area: 1607410.43 um^2
+[INFO DPL-0007] Movable instances area: 776318.05 um^2
+[INFO DPL-0008] Fixed instances area within core: 11653.69 um^2
+[INFO DPL-0009] Utilization: 49.0%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 35536 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |          0 |         0 |         0
+Negotiation phase 1 converged at iteration 0.
+[INFO DPL-0500] Runtime: 0.16s
+[INFO GRT-0015] Inserted 9 diodes.
+[INFO GRT-0012] Found 0 antenna violations.
+[INFO ANT-0002] Found 0 net violations.
+[INFO ANT-0001] Found 0 pin violations.
+Estimate parasitics...
+estimate_parasitics -global_routing
+Report metrics stage 5, global route...
+
+==========================================================================
+global route report_design_area
+--------------------------------------------------------------------------
+Design area 787972 um^2 49% utilization.
+[INFO FLW-0007] clock core_clock period 40.000000
+[WARNING FLW-0010] more than one clock found. Skipping sdc update.
+[INFO FLW-0011] Path endpoint path count 2671
+write_db ./results/gf180/integration_final/base/5_1_grt.odb
+Took 5 seconds: write_db ./results/gf180/integration_final/base/5_1_grt.odb
+write_sdc -no_timestamp ./results/gf180/integration_final/base/5_1_grt.sdc
+Elapsed time: 0:45.20[h:]min:sec. CPU time: user 307.15 sys 29.32 (744%). Peak memory: 1405792KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+5_1_grt                   .odb           45           1372 4092daa41cbcca07181e
+5_1_grt                   .sdc                             609b819f159096290e0c
