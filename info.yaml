@@ -1,0 +1,31 @@
+ # ----- ------ ----- ----- ------ ----- ----- ------ -----
+
+# Chipathon 2026: Project configuration
+
+# LICENSE: Apache License Version 2.0
+
+# http://www.apache.org/licenses/
+
+# ----- ------ ----- ----- ------ ----- ----- ------ -----
+
+# data will be pulled from main branch of the repo.
+
+# This file will be updated with more information later
+
+# ======================================================
+
+# Project metadata (used for documentation / review)
+
+# ======================================================
+
+project:
+
+  title: "Parametrizable accuracy-aware TPU"             # Project title (e.g. "Simple CPU", "PLL", "ADC")
+
+  team: "A37TensorGrid"                      # Your Team name
+
+  discord: "Baliraja, bharadwaajak"                   # Optional: Discord username (for support / communication)
+
+  description: "Physicla design data"  # Short one-line description
+
+  lvs_config: "physical/lvs_config.json>" 
