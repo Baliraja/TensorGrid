@@ -28,4 +28,4 @@ project:
 
   description: "Physical design data"  # Short one-line description
 
-  lvs_config: "physical/lvs_config.json>" 
+  lvs_config: "physical/lvs_config.json" 
