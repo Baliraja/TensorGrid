@@ -26,6 +26,6 @@ project:
 
   discord: "Baliraja, bharadwaajak"                   # Optional: Discord username (for support / communication)
 
-  description: "Physical design data"  # Short one-line description
+  description: "Accuracy-aware parametrizable TPU Physical design data"  # Short one-line description
 
   lvs_config: "physical/lvs_config.json" 
