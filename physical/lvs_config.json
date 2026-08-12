@@ -1,5 +1,5 @@
 {
-	"STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu9t5v0",
+	"STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
 	"INCLUDE_CONFIGS": [
 		""
 	],
@@ -26,5 +26,5 @@
 	"LVS_VERILOG_FILES": [
 		""
 	],
-	"LAYOUT_FILE": "flow/results/gf180/integration_final/base/A37_integration_final.gds"
+	"LAYOUT_FILE": "flow/results/gf180/integration_final/base/$TOP_SOURCE.gds"
 }
