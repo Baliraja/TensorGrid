@@ -29,3 +29,19 @@ project:
   description: "Accuracy-aware parametrizable TPU Physical design data"  # Short one-line description
 
   lvs_config: "lvs_config.json" 
+
+pins:
+  - name: i_clk
+    io_type: input_cmos
+    #secondary_esd: <true|false>   # analog only
+  - name: i_rst_n
+    io_type: input_cmos
+    
+  - name: i_uart_rx
+    io_type: input_cmos
+
+  - name: o_uart_tx
+    io_type: bidirectional
+
+  - name: VDD
+    io_type: power
