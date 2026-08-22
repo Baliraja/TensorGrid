@@ -31,9 +31,15 @@ project:
   lvs_config: "lvs_config.json" 
 
 pins:
+  - name: VSS
+    io_type: ground
+    
+  - name: VDD
+    io_type: power
+    
   - name: i_clk
     io_type: input_cmos
-    #secondary_esd: <true|false>   # analog only
+   
   - name: i_rst_n
     io_type: input_cmos
     
@@ -45,3 +51,6 @@ pins:
 
   - name: VDD
     io_type: power
+
+  - name: VSS
+    io_type: ground
