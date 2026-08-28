@@ -31,10 +31,10 @@ project:
   lvs_config: "lvs_config.json" 
 
 pins:
-  - name: VSSD
+  - name: VSS
     io_type: ground
     
-  - name: VDDD
+  - name: VDD
     io_type: power
     
   - name: i_clk
