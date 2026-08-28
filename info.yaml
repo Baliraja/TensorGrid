@@ -49,8 +49,8 @@ pins:
   - name: o_uart_tx
     io_type: bidirectional
 
-  - name: VDDB
-    io_type: power
+  #- name: VDDB
+  #  io_type: power
 
-  - name: VSSB
-    io_type: ground
+  #- name: VSSB
+  #  io_type: ground
