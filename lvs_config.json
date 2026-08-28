@@ -21,10 +21,10 @@
     ""
   ],
   "LVS_SPICE_FILES": [
-    "$UPRJ_ROOT/physical/librelane/spice/integration_final.spice"
+    "$UPRJ_ROOT/physical/librelane/final/spice/$TOP_SOURCE.spice"
   ],
   "LVS_VERILOG_FILES": [
-    "$UPRJ_ROOT/physical/librelane/pnl/integration_final.pnl.v"
+    "$UPRJ_ROOT/physical/librelane/final/pnl/$TOP_SOURCE.pnl.v"
   ],
-  "LAYOUT_FILE": "$UPRJ_ROOT/physical/librelane/gds/$TOP_SOURCE.gds"
+  "LAYOUT_FILE": "$UPRJ_ROOT/physical/librelane/final/gds/$TOP_SOURCE.gds"
 }

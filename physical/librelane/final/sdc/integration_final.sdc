@@ -5,7 +5,7 @@ current_design integration_final
 ###############################################################################
 # Timing Constraints
 ###############################################################################
-create_clock -name i_clk -period 100.0000 [get_ports {i_clk}]
+create_clock -name i_clk -period 50.0000 [get_ports {i_clk}]
 set_clock_transition 0.1500 [get_clocks {i_clk}]
 set_clock_uncertainty -setup 0.5000 i_clk
 set_clock_uncertainty -hold 0.1000 i_clk
