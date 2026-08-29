@@ -15,11 +15,11 @@
         "UART_BAUD_RATE": "00000000000001111010000100100000"
       },
       "ports": {
-        "VSSD": {
+        "VSS": {
           "direction": "inout",
           "bits": [ 2 ]
         },
-        "VDDD": {
+        "VDD": {
           "direction": "inout",
           "bits": [ 3 ]
         },
@@ -185698,18 +185698,18 @@
           "attributes": {
           }
         },
-        "VDDD": {
+        "VDD": {
           "hide_name": 0,
           "bits": [ 3 ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:18.17-18.21"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:18.17-18.20"
           }
         },
-        "VSSD": {
+        "VSS": {
           "hide_name": 0,
           "bits": [ 2 ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:17.17-17.21"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:17.17-17.20"
           }
         },
         "i_clk": {
