@@ -1,0 +1,49 @@
+152. Printing statistics.
+
+=== A37_A ===
+
+        +----------Local Count, excluding submodules.
+        | 
+    22698 wires
+    25412 wire bits
+      186 public wires
+     1537 public wire bits
+       19 ports
+       19 port bits
+    24172 cells
+     5882   $_ANDNOT_
+      301   $_AND_
+      647   $_DFFE_PN0P_
+      378   $_DFFE_PP0P_
+      222   $_DFF_PN0_
+        4   $_DFF_PN1_
+        2   $_DFF_PP0_
+     5387   $_MUX_
+      449   $_NAND_
+     1673   $_NOR_
+      841   $_NOT_
+     1020   $_ORNOT_
+     3420   $_OR_
+        7   $_SDFFE_PN0P_
+       31   $_SDFF_PN0_
+     1457   $_XNOR_
+     2451   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFFE_PP0P_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_DFF_PP0_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_SDFFE_PN0P_ is unknown!
+   Area for cell type $_SDFF_PN0_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
