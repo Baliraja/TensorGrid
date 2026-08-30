@@ -5,7 +5,7 @@
       "attributes": {
         "hdlname": "A37_A",
         "top": "00000000000000000000000000000001",
-        "src": "/foss/designs/integration_final/src/A37_A.sv:7.1-111.10"
+        "src": "/foss/designs/integration_final/src/A37_A.sv:7.1-108.10"
       },
       "parameter_default_values": {
         "BAUD_FREQ": "00000000000000000000000000000100",
@@ -15,11 +15,11 @@
         "UART_BAUD_RATE": "00000000000001111010000100100000"
       },
       "ports": {
-        "VSS": {
+        "VDD": {
           "direction": "inout",
           "bits": [ 2 ]
         },
-        "VDD": {
+        "VSS": {
           "direction": "inout",
           "bits": [ 3 ]
         },
@@ -145865,7 +145865,7 @@
           },
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
-            "src": "/foss/designs/integration_final/src/A37_A.sv:86.5-91.8"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:83.5-88.8"
           },
           "port_directions": {
             "ARST": "input",
@@ -185700,149 +185700,149 @@
         },
         "VDD": {
           "hide_name": 0,
-          "bits": [ 3 ],
+          "bits": [ 2 ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:18.17-18.20"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:15.16-15.19"
           }
         },
         "VSS": {
           "hide_name": 0,
-          "bits": [ 2 ],
+          "bits": [ 3 ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:17.17-17.20"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:16.16-16.19"
           }
         },
         "i_clk": {
           "hide_name": 0,
           "bits": [ 4 ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:25.18-25.23"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:21.18-21.23"
           }
         },
         "i_clk_PD": {
           "hide_name": 0,
           "bits": [ "0" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:27.18-27.26"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:23.18-23.26"
           }
         },
         "i_clk_PU": {
           "hide_name": 0,
           "bits": [ "0" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:26.18-26.26"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:22.18-22.26"
           }
         },
         "i_rst_n": {
           "hide_name": 0,
           "bits": [ 5 ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:32.18-32.25"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:28.18-28.25"
           }
         },
         "i_rst_n_PD": {
           "hide_name": 0,
           "bits": [ "0" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:34.18-34.28"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:30.18-30.28"
           }
         },
         "i_rst_n_PU": {
           "hide_name": 0,
           "bits": [ "1" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:33.18-33.28"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:29.18-29.28"
           }
         },
         "i_uart_rx": {
           "hide_name": 0,
           "bits": [ 6 ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:39.18-39.27"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:35.18-35.27"
           }
         },
         "i_uart_rx_PD": {
           "hide_name": 0,
           "bits": [ "0" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:41.18-41.30"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:37.18-37.30"
           }
         },
         "i_uart_rx_PU": {
           "hide_name": 0,
           "bits": [ "0" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:40.18-40.30"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:36.18-36.30"
           }
         },
         "o_uart_tx_CS": {
           "hide_name": 0,
           "bits": [ 7 ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:46.18-46.30"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:42.18-42.30"
           }
         },
         "o_uart_tx_IE": {
           "hide_name": 0,
           "bits": [ "0" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:48.18-48.30"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:44.18-44.30"
           }
         },
         "o_uart_tx_IN": {
           "hide_name": 0,
           "bits": [ 9 ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:55.18-55.30"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:51.22-51.34"
           }
         },
         "o_uart_tx_OE": {
           "hide_name": 0,
           "bits": [ "1" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:49.18-49.30"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:45.18-45.30"
           }
         },
         "o_uart_tx_OUT": {
           "hide_name": 0,
           "bits": [ 8 ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:52.18-52.31"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:48.18-48.31"
           }
         },
         "o_uart_tx_PD": {
           "hide_name": 0,
           "bits": [ "0" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:51.18-51.30"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:47.18-47.30"
           }
         },
         "o_uart_tx_PDRV0": {
           "hide_name": 0,
           "bits": [ "1" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:53.18-53.33"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:49.18-49.33"
           }
         },
         "o_uart_tx_PDRV1": {
           "hide_name": 0,
           "bits": [ "0" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:54.18-54.33"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:50.18-50.33"
           }
         },
         "o_uart_tx_PU": {
           "hide_name": 0,
           "bits": [ "0" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:50.18-50.30"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:46.18-46.30"
           }
         },
         "o_uart_tx_SL": {
           "hide_name": 0,
           "bits": [ "0" ],
           "attributes": {
-            "src": "/foss/designs/integration_final/src/A37_A.sv:47.18-47.30"
+            "src": "/foss/designs/integration_final/src/A37_A.sv:43.18-43.30"
           }
         },
         "u_integration_final.integration_inst.command_parser_inst.byte_count": {
