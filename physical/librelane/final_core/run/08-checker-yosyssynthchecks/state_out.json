@@ -1,0 +1,14 @@
+{
+    "json_h": "/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/05-yosys-jsonheader/A37_A.h.json",
+    "nl": "/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/06-yosys-synthesis/A37_A.nl.v",
+    "metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 368,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 18942,
+        "design__instance__area": 414469.1264,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+    }
+}
