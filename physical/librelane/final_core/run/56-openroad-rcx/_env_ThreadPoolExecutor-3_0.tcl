@@ -56,7 +56,7 @@ set ::env(PNR_SDC_FILE) /foss/designs/integration_final/constraints_core.sdc
 set ::env(DEDUPLICATE_CORNERS) 0
 set ::env(RCX_MERGE_VIA_WIRE_RES) 1
 set ::env(RCX_RULESETS) "\"nom_*\" /foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.nom \"min_*\" /foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.min \"max_*\" /foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.max"
-set ::env(CURRENT_DEF) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/55-odb-cellfrequencytables/A37_A.def
+set ::env(CURRENT_DEF) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/55-odb-cellfrequencytables/A37_A.def
 set ::env(RCX_LEF) /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__nom.tlef
 set ::env(RCX_RULESET) /foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.nom
-set ::env(SAVE_SPEF) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/56-openroad-rcx/nom/A37_A.nom.spef
+set ::env(SAVE_SPEF) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/56-openroad-rcx/nom/A37_A.nom.spef

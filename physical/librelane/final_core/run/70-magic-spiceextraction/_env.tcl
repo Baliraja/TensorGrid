@@ -66,7 +66,7 @@ set ::env(MAGIC_EXT_UNIQUE) all
 set ::env(MAGIC_EXT_SHORT_RESISTOR) 0
 set ::env(MAGIC_EXT_ABSTRACT) 0
 set ::env(MAGIC_FEEDBACK_CONVERSION_THRESHOLD) 10000
-set ::env(CURRENT_GDS) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/60-klayout-streamout/A37_A.gds
-set ::env(CURRENT_DEF) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/55-odb-cellfrequencytables/A37_A.def
-set ::env(SAVE_SPICE) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/70-magic-spiceextraction/A37_A.spice
+set ::env(CURRENT_GDS) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/60-klayout-streamout/A37_A.gds
+set ::env(CURRENT_DEF) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/55-odb-cellfrequencytables/A37_A.def
+set ::env(SAVE_SPICE) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/70-magic-spiceextraction/A37_A.spice
 set ::env(MACRO_GDS_FILES) ""

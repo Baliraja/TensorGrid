@@ -54,4 +54,4 @@ set ::env(PDN_CONNECT_MACROS_TO_GRID) 1
 set ::env(PDN_ENABLE_GLOBAL_CONNECTIONS) 1
 set ::env(PNR_SDC_FILE) /foss/designs/integration_final/constraints_core.sdc
 set ::env(DEDUPLICATE_CORNERS) 0
-set ::env(CURRENT_ODB) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/35-openroad-cts/A37_A.odb
+set ::env(CURRENT_ODB) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/35-openroad-cts/A37_A.odb

@@ -52,5 +52,5 @@ set ::env(PAD_EDGE_SPACING) 0
 set ::env(MAGIC_EXT_USE_GDS) 0
 set ::env(NETGEN_SETUP) /foss/pdks/gf180mcuD/libs.tech/netgen/gf180mcuD_setup.tcl
 set ::env(LVS_INCLUDE_MARCO_NETLISTS) 0
-set ::env(CURRENT_SPICE) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/70-magic-spiceextraction/A37_A.spice
-set ::env(CURRENT_PNL) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/54-openroad-fillinsertion/A37_A.pnl.v
+set ::env(CURRENT_SPICE) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/70-magic-spiceextraction/A37_A.spice
+set ::env(CURRENT_PNL) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/54-openroad-fillinsertion/A37_A.pnl.v

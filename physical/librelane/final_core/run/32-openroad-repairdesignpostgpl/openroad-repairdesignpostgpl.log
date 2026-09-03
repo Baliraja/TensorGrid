@@ -4,7 +4,7 @@ Reading timing models for corner min_ff_n40C_3v60…
 Reading timing library for the 'min_ff_n40C_3v60' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib'…
 Reading timing models for corner nom_tt_025C_3v30…
 Reading timing library for the 'nom_tt_025C_3v30' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
-Reading OpenROAD database at '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/28-openroad-globalplacement/A37_A.odb'…
+Reading OpenROAD database at '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/28-openroad-globalplacement/A37_A.odb'…
 Reading design constraints file at '/foss/designs/integration_final/constraints_core.sdc'…
 [INFO] No information on clock propagation in input SDC file-- propagating all clocks.
 [INFO RSZ-0027] Inserted 3 gf180mcu_fd_sc_mcu7t5v0__dlyb_1 input buffers.
@@ -14,31 +14,31 @@ Reading design constraints file at '/foss/designs/integration_final/constraints_
 Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
 ---------------------------------------------------------------------
         0 |     +0.0% |       0 |       0 |             0 |     18951
-     1000 |     +0.4% |       6 |      77 |            41 |     17951
-     2000 |     +0.4% |       7 |      88 |            50 |     16951
-     3000 |     +0.6% |      17 |     121 |            72 |     15951
-     4000 |     +0.7% |      20 |     125 |            76 |     14951
-     5000 |     +0.7% |      26 |     129 |            80 |     13951
-     6000 |     +0.8% |      31 |     141 |            85 |     12951
-     7000 |     +1.2% |      47 |     210 |           112 |     11951
-     8000 |     +2.3% |      98 |     399 |           188 |     10951
-     9000 |     +3.3% |     132 |     583 |           262 |      9951
-    10000 |     +3.6% |     141 |     629 |           279 |      8951
-    11000 |     +3.9% |     151 |     683 |           298 |      7951
-    12000 |     +5.3% |     197 |     898 |           361 |      6951
-    13000 |     +6.1% |     241 |    1034 |           426 |      5951
-    14000 |     +6.4% |     259 |    1088 |           474 |      4951
-    15000 |     +7.0% |     283 |    1216 |           518 |      3951
-    16000 |     +8.5% |     335 |    1489 |           593 |      2951
-    17000 |    +11.8% |     427 |    2106 |           728 |      1951
-    18000 |    +15.4% |     488 |    2865 |           949 |       951
-    final |    +20.5% |     633 |    4025 |          1246 |         0
+     1000 |     +0.3% |       3 |      71 |            40 |     17951
+     2000 |     +0.4% |       4 |      79 |            47 |     16951
+     3000 |     +0.6% |      13 |     111 |            69 |     15951
+     4000 |     +0.6% |      15 |     115 |            72 |     14951
+     5000 |     +0.6% |      21 |     119 |            76 |     13951
+     6000 |     +0.8% |      26 |     132 |            82 |     12951
+     7000 |     +1.1% |      42 |     193 |           108 |     11951
+     8000 |     +2.1% |      92 |     367 |           180 |     10951
+     9000 |     +3.1% |     125 |     552 |           254 |      9951
+    10000 |     +3.3% |     133 |     594 |           270 |      8951
+    11000 |     +3.6% |     142 |     644 |           284 |      7951
+    12000 |     +5.0% |     188 |     856 |           344 |      6951
+    13000 |     +5.7% |     230 |     977 |           404 |      5951
+    14000 |     +6.0% |     247 |    1028 |           448 |      4951
+    15000 |     +6.6% |     271 |    1144 |           490 |      3951
+    16000 |     +8.1% |     323 |    1410 |           562 |      2951
+    17000 |    +11.3% |     416 |    2011 |           701 |      1951
+    18000 |    +15.0% |     479 |    2799 |           932 |       951
+    final |    +20.1% |     628 |    3962 |          1229 |         0
 ---------------------------------------------------------------------
-[INFO RSZ-0034] Found 633 slew violations.
-[INFO RSZ-0036] Found 14 capacitance violations.
-[INFO RSZ-0037] Found 1225 long wires.
-[INFO RSZ-0039] Resized 633 instances.
-[INFO RSZ-0038] Inserted 4025 buffers in 1246 nets.
+[INFO RSZ-0034] Found 628 slew violations.
+[INFO RSZ-0036] Found 15 capacitance violations.
+[INFO RSZ-0037] Found 1209 long wires.
+[INFO RSZ-0039] Resized 628 instances.
+[INFO RSZ-0038] Inserted 3962 buffers in 1229 nets.
 [INFO RSZ-0042] Inserted 10 tie gf180mcu_fd_sc_mcu7t5v0__tiel instances.
 [INFO RSZ-0042] Inserted 3 tie gf180mcu_fd_sc_mcu7t5v0__tieh instances.
 [WARNING RSZ-0020] found 2 floating nets.
@@ -47,32 +47,32 @@ Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
 + detailed_placement -max_displacement  500 100 
 Placement Analysis
 ---------------------------------
-total displacement      67994.2 u
+total displacement      68025.7 u
 average displacement        2.2 u
 max displacement           38.0 u
-original HPWL         1095860.6 u
-legalized HPWL        1149557.3 u
+original HPWL         1093408.2 u
+legalized HPWL        1147071.8 u
 delta HPWL                    5 %
 
-[INFO DPL-0020] Mirrored 8387 instances
-[INFO DPL-0021] HPWL before          1149557.3 u
-[INFO DPL-0022] HPWL after           1132617.7 u
+[INFO DPL-0020] Mirrored 8299 instances
+[INFO DPL-0021] HPWL before          1147071.8 u
+[INFO DPL-0022] HPWL after           1130314.1 u
 [INFO DPL-0023] HPWL delta               -1.5 %
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
-[INFO ODB-0403] 16172 connections made, 0 conflicts skipped.
+[INFO ODB-0403] 15920 connections made, 0 conflicts skipped.
 Updating metrics…
 Cell type report:                       Count       Area
   Endcap cell                             534    2344.47
   Tap cell                               7132   31312.33
   Tie cell                                 13     114.15
-  Timing Repair Buffer                   4030   73600.67
-  Inverter                               1078    9707.17
-  Sequential cell                        1291   96852.22
-  Multi-Input combinational cell        16560  319335.74
-  Total                                 30638  533266.76
-Writing OpenROAD database to '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/32-openroad-repairdesignpostgpl/A37_A.odb'…
-Writing netlist to '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/32-openroad-repairdesignpostgpl/A37_A.nl.v'…
-Writing powered netlist to '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/32-openroad-repairdesignpostgpl/A37_A.pnl.v'…
-Writing layout to '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/32-openroad-repairdesignpostgpl/A37_A.def'…
-Writing timing constraints to '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/32-openroad-repairdesignpostgpl/A37_A.sdc'…
+  Timing Repair Buffer                   3967   72454.77
+  Inverter                               1078    9702.78
+  Sequential cell                        1291   96878.57
+  Multi-Input combinational cell        16560  319019.64
+  Total                                 30575  531826.71
+Writing OpenROAD database to '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/32-openroad-repairdesignpostgpl/A37_A.odb'…
+Writing netlist to '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/32-openroad-repairdesignpostgpl/A37_A.nl.v'…
+Writing powered netlist to '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/32-openroad-repairdesignpostgpl/A37_A.pnl.v'…
+Writing layout to '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/32-openroad-repairdesignpostgpl/A37_A.def'…
+Writing timing constraints to '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/32-openroad-repairdesignpostgpl/A37_A.sdc'…

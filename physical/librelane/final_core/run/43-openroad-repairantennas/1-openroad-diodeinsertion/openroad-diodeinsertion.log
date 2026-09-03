@@ -1,6 +1,6 @@
 Reading timing models for corner nom_tt_025C_3v30…
 Reading timing library for the 'nom_tt_025C_3v30' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
-Reading OpenROAD database at '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/41-openroad-repairdesignpostgrt/A37_A.odb'…
+Reading OpenROAD database at '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/41-openroad-repairdesignpostgrt/A37_A.odb'…
 Reading design constraints file at '/foss/designs/integration_final/constraints_core.sdc'…
 [INFO] No information on clock propagation in input SDC file-- propagating all clocks.
 + repair_antennas gf180mcu_fd_sc_mcu7t5v0__antenna -iterations 3 -ratio_margin 10 -allow_congestion
@@ -13,12 +13,12 @@ Cell type report:                       Count       Area
   Endcap cell                             534    2344.47
   Tap cell                               7132   31312.33
   Tie cell                                 13     114.15
-  Clock buffer                            147    8139.80
-  Timing Repair Buffer                   4684   87074.80
-  Inverter                               1078    9711.56
-  Clock inverter                           56    1202.97
-  Sequential cell                        1291   96896.13
-  Multi-Input combinational cell        16560  320648.47
-  Total                                 31495  557444.70
-Writing OpenROAD database to '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/43-openroad-repairantennas/1-openroad-diodeinsertion/A37_A.odb'…
-Writing layout to '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/43-openroad-repairantennas/1-openroad-diodeinsertion/A37_A.def'…
+  Clock buffer                            146    7898.33
+  Timing Repair Buffer                   4637   86271.36
+  Inverter                               1078    9707.17
+  Clock inverter                           54    1071.26
+  Sequential cell                        1291   96918.08
+  Multi-Input combinational cell        16560  320551.88
+  Total                                 31445  556189.04
+Writing OpenROAD database to '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/43-openroad-repairantennas/1-openroad-diodeinsertion/A37_A.odb'…
+Writing layout to '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/43-openroad-repairantennas/1-openroad-diodeinsertion/A37_A.def'…

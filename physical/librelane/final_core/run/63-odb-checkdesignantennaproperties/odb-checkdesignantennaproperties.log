@@ -10,9 +10,9 @@ The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/pdks/gf180mcu
 
 [INFO ODB-0227] LEF file: /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef, created 229 library cells
 [WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
-The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/62-magic-writelef/A37_A.lef at line 2.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/62-magic-writelef/A37_A.lef at line 2.
 
-[INFO ODB-0227] LEF file: /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/62-magic-writelef/A37_A.lef, created 1 library cells
-[INFO ODB-0127] Reading DEF file: /tmp/tmpngg7_xsx
+[INFO ODB-0227] LEF file: /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/62-magic-writelef/A37_A.lef, created 1 library cells
+[INFO ODB-0127] Reading DEF file: /tmp/tmpp_ufi1vo
 [INFO ODB-0128] Design: empty
-[INFO ODB-0134] Finished DEF file: /tmp/tmpngg7_xsx
+[INFO ODB-0134] Finished DEF file: /tmp/tmpp_ufi1vo
