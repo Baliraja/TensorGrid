@@ -10,35 +10,35 @@ Reading cell LEF file at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/
 The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef at line 2.
 
 [INFO ODB-0227] LEF file: /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef, created 229 library cells
-[INFO ODB-0127] Reading DEF file: /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/55-odb-cellfrequencytables/A37_A.def
+[INFO ODB-0127] Reading DEF file: /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/55-odb-cellfrequencytables/A37_A.def
 [INFO ODB-0128] Design: A37_A
 [INFO ODB-0130]     Created 21 pins.
-[INFO ODB-0131]     Created 72320 components and 351427 component-terminals.
-[INFO ODB-0132]     Created 2 special nets and 273948 connections.
-[INFO ODB-0133]     Created 23742 nets and 77388 connections.
-[INFO ODB-0134] Finished DEF file: /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/55-odb-cellfrequencytables/A37_A.def
+[INFO ODB-0131]     Created 72291 components and 351211 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 273832 connections.
+[INFO ODB-0133]     Created 23693 nets and 77289 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/55-odb-cellfrequencytables/A37_A.def
 Using RCX ruleset '/foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.max'…
 [INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
 [INFO RCX-0029] Defined extraction corner CURRENT_CORNER
 + extract_parasitics  -ext_model_file /foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.max -lef_res
 [INFO RCX-0435] Reading extraction model file /foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.max ...
 [INFO RCX-0436] RC segment generation A37_A (max_merge_res 50.0) ...
-[INFO RCX-0040] Final 85426 rc segments
+[INFO RCX-0040] Final 85251 rc segments
 [INFO RCX-0439] Coupling Cap extraction A37_A ...
 [INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
-[INFO RCX-0442] 47% of 159875 wires extracted
-[INFO RCX-0442] 100% of 159875 wires extracted
-[INFO RCX-0045] Extract 23742 nets, 109168 rsegs, 109168 caps, 236834 ccs
+[INFO RCX-0442] 47% of 159864 wires extracted
+[INFO RCX-0442] 100% of 159864 wires extracted
+[INFO RCX-0045] Extract 23693 nets, 108944 rsegs, 108944 caps, 236693 ccs
 Setting global connections for newly added cells…
 [INFO] Setting global connections...
 [INFO ODB-0403] 0 connections made, 0 conflicts skipped.
 Updating metrics…
 Cell type report:                       Count       Area
   Endcap cell                             534    2344.47
-  Fill cell                             40825  540941.18
+  Fill cell                             40846  542196.84
   Tap cell                               7132   31312.33
   Tie cell                                 13     114.15
-  Standard cell                         23816  523673.74
-  Total                                 72320 1098385.88
-Writing extracted parasitics to '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/56-openroad-rcx/max/A37_A.max.spef'…
-[INFO RCX-0443] 23742 nets finished
+  Standard cell                         23766  522418.09
+  Total                                 72291 1098385.88
+Writing extracted parasitics to '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/56-openroad-rcx/max/A37_A.max.spef'…
+[INFO RCX-0443] 23693 nets finished

@@ -8,12 +8,12 @@ set_global_connections
 # =============================================================================
 # OVERRIDE CORE RING DIMENSIONS (Doubled Thickness)
 # =============================================================================
-set ::env(PDN_CORE_RING_VWIDTH)   6.4  ;# Doubled vertical thickness
-set ::env(PDN_CORE_RING_HWIDTH)   6.4  ;# Doubled horizontal thickness
+set ::env(PDN_CORE_RING_VWIDTH)   7   ;# Vertical thickness
+set ::env(PDN_CORE_RING_HWIDTH)   7   ;# Horizontal thickness
 set ::env(PDN_CORE_RING_VSPACING) 5.0  ;# Gap between the VDD and VSS rings
-set ::env(PDN_CORE_RING_HSPACING) 5.0  ;# Gap between the VDD and VSS rings
-set ::env(PDN_CORE_RING_VOFFSET)  4.0 ;# Pushed further out to clear standard cells
-set ::env(PDN_CORE_RING_HOFFSET)  4.0 ;# Pushed further out to clear standard cells
+set ::env(PDN_CORE_RING_HSPACING) 11.5 ;# Gap between the VDD and VSS rings
+set ::env(PDN_CORE_RING_VOFFSET)  3.0 ;# Pushed further out to clear standard cells
+set ::env(PDN_CORE_RING_HOFFSET)  3.0 ;# Pushed further out to clear standard cells
 
 foreach pnet $::env(VDD_NETS) {
     set n [[ord::get_db_block] findNet $pnet]
@@ -98,13 +98,13 @@ if { $::env(PDN_CORE_RING) == 1 } {
 }
 
 # =============================================================================
-# A37 PADFRAME POWER BRIDGE (PHYSICAL MANIFOLDS)
+# A37 PADFRAME MULTI-BRIDGE (Bottom VSS TOP-CONNECTED, OTHERS midpoint)
 # =============================================================================
-set ::_PG_BRIDGE_W_UM   10.0
-set ::_PG_M2_LAND_UM    2.0
-set ::_PG_M3_EDGE_UM    0.20
-set ::_PG_VIA_ROWS      3
-set ::_PG_VIA_COLS      3
+set ::_PG_BRIDGE_W_UM   5.0
+set ::_PG_M2_LAND_UM     2.0
+set ::_PG_M3_EDGE_UM     0.20
+set ::_PG_VIA_ROWS       3
+set ::_PG_VIA_COLS       3
 
 proc _pg_template_path {} {
     if {[info exists ::env(FP_DEF_TEMPLATE)] && [file readable $::env(FP_DEF_TEMPLATE)]} { return $::env(FP_DEF_TEMPLATE) }
@@ -179,7 +179,8 @@ proc _pg_build_power_bridges {} {
     if {$m2 eq "NULL" || $v2 eq "NULL" || $m3 eq "NULL"} { error "power-bridge: Metal2/Via2/Metal3 not found in tech" }
 
     set bw [expr {int($::_PG_BRIDGE_W_UM * $dbu)}]; set hw [expr {$bw / 2}]
-    set landx [expr {int($::_PG_M2_LAND_UM * $dbu)}]; set m3x0 [expr {int($::_PG_M3_EDGE_UM * $dbu)}]
+    set landx [expr {int($::_PG_M2_LAND_UM * $dbu)}]
+    set m3x0 [expr {int($::_PG_M3_EDGE_UM * $dbu)}]
     set xcw [expr {$landx / 2}]
 
     set colv [_pg_make_stack_via $block PG_V2_COL $m2 $v2 $m3 $::_PG_VIA_ROWS $::_PG_VIA_COLS]
@@ -191,54 +192,87 @@ proc _pg_build_power_bridges {} {
 
     lassign $vss_leg vssL vssR
     lassign $vdd_leg vddL vddR
-    puts "\[INFO\] power-bridge: VSS leg x=($vssL $vssR)  VDD leg x=($vddL $vddR)"
 
     # =========================================================================
-    # VSS BRIDGE
+    # VSS MULTI-BRIDGE (First Pad = Top-Connected, Others = Midpoint)
     # =========================================================================
-    lassign [_pg_template_pin_rows VSS] tdbu rows
+    lassign [_pg_template_pin_rows VSS] tdbu vss_rows
     set sc [expr {double($dbu) / $tdbu}]
-    set sw [odb::dbSWire_create $vss "ROUTED"]
+    set sw_vss [odb::dbSWire_create $vss "ROUTED"]
+
+    # Sort vss_rows by y1 ascending so index 0 is guaranteed to be the bottom-most pad
+    set vss_rows [lsort -integer -index 0 $vss_rows]
 
     set vss_min_y 1000000000; set vss_max_y 0
-    foreach r $rows {
-        lassign $r y1 y2 x2
-        set y1_dbu [expr {int($y1 * $sc)}]; set y2_dbu [expr {int($y2 * $sc)}]
-        if {$y1_dbu < $vss_min_y} { set vss_min_y $y1_dbu }
-        if {$y2_dbu > $vss_max_y} { set vss_max_y $y2_dbu }
+
+	if {[llength $vss_rows] > 0} {
+	    # 1. Handle the first VSS pad at the top edge to clear the southwest corner
+	    set first_r [lindex $vss_rows 0]
+	    lassign $first_r y1 y2 x2
+	    set y1_dbu [expr {int($y1 * $sc)}]; set y2_dbu [expr {int($y2 * $sc)}]
+	    if {$y1_dbu < $vss_min_y} { set vss_min_y $y1_dbu }
+	    if {$y2_dbu > $vss_max_y} { set vss_max_y $y2_dbu }
+	    
+	    set cy_first [expr {$y2_dbu - $hw}]
+	    odb::dbSBox_create $sw_vss $m3 $m3x0 [expr {$cy_first - $hw}] $vssR [expr {$cy_first + $hw}] "STRIPE"
+	    odb::dbSBox_create $sw_vss $colv $xcw $cy_first "STRIPE"
+	    odb::dbSBox_create $sw_vss $colv [expr {($vssL + $vssR) / 2}] $cy_first "STRIPE"
+
+        # 2. Handle the rest of the VSS pads normally (midpoint)
+        foreach r [lrange $vss_rows 1 end] {
+            lassign $r y1 y2 x2
+            set y1_dbu [expr {int($y1 * $sc)}]; set y2_dbu [expr {int($y2 * $sc)}]
+            if {$y1_dbu < $vss_min_y} { set vss_min_y $y1_dbu }
+            if {$y2_dbu > $vss_max_y} { set vss_max_y $y2_dbu }
+            
+            set cy_row [expr {int(($y1_dbu + $y2_dbu) / 2)}]
+            odb::dbSBox_create $sw_vss $m3 $m3x0 [expr {$cy_row - $hw}] $vssR [expr {$cy_row + $hw}] "STRIPE"
+            odb::dbSBox_create $sw_vss $colv $xcw $cy_row "STRIPE"
+            odb::dbSBox_create $sw_vss $colv [expr {($vssL + $vssR) / 2}] $cy_row "STRIPE"
+        }
+    }
+    if {$vss_min_y < 1000000000} {
+        odb::dbSBox_create $sw_vss $m2 0 $vss_min_y $landx $vss_max_y "STRIPE"
     }
 
-    set cy_vss [expr {int(65.0 * $dbu)}]
-    set top_y_vss [expr {max($vss_max_y, $cy_vss + $hw)}]
-
-    odb::dbSBox_create $sw $m2 0 $vss_min_y $landx $top_y_vss "STRIPE"
-    odb::dbSBox_create $sw $m3 $m3x0 [expr {$cy_vss - $hw}] $vssR [expr {$cy_vss + $hw}] "STRIPE"
-    odb::dbSBox_create $sw $colv $xcw $cy_vss "STRIPE"
-    set xce_vss [expr {($vssL + $vssR) / 2}]
-    odb::dbSBox_create $sw $colv $xce_vss $cy_vss "STRIPE"
-
     # =========================================================================
-    # VDD BRIDGE
+    # VDD MULTI-BRIDGE (Sort by Y, top-most pad = Bottom Edge Connected)
     # =========================================================================
-    lassign [_pg_template_pin_rows VDD] tdbu rows
-    set sw [odb::dbSWire_create $vdd "ROUTED"]
+    lassign [_pg_template_pin_rows VDD] tdbu vdd_rows
+    set sw_vdd [odb::dbSWire_create $vdd "ROUTED"]
+
+    # Sort vdd_rows by y1 ascending so index end is the northernmost pad (169.14 to 178.64)
+    set vdd_rows [lsort -integer -index 0 $vdd_rows]
 
     set vdd_min_y 1000000000; set vdd_max_y 0
-    foreach r $rows {
-        lassign $r y1 y2 x2
-        set y1_dbu [expr {int($y1 * $sc)}]; set y2_dbu [expr {int($y2 * $sc)}]
-        if {$y1_dbu < $vdd_min_y} { set vdd_min_y $y1_dbu }
-        if {$y2_dbu > $vdd_max_y} { set vdd_max_y $y2_dbu }
-    }
 
-    set cy_vdd [expr {int(120.0 * $dbu)}]
-    set top_y_vdd [expr {max($vdd_max_y, $cy_vdd + $hw)}]
-    
-    odb::dbSBox_create $sw $m2 0 $vdd_min_y $landx $top_y_vdd "STRIPE"
-    odb::dbSBox_create $sw $m3 $m3x0 [expr {$cy_vdd - $hw}] $vddR [expr {$cy_vdd + $hw}] "STRIPE"
-    odb::dbSBox_create $sw $colv $xcw $cy_vdd "STRIPE"
-    set xce_vdd [expr {($vddL + $vddR) / 2}]
-    odb::dbSBox_create $sw $colv $xce_vdd $cy_vdd "STRIPE"
+    if {[llength $vdd_rows] > 0} {
+        # 1. Handle the lower/intermediate VDD pads normally (midpoint)
+        foreach r [lrange $vdd_rows 0 end-1] {
+            lassign $r y1 y2 x2
+            set y1_dbu [expr {int($y1 * $sc)}]; set y2_dbu [expr {int($y2 * $sc)}]
+            if {$y1_dbu < $vdd_min_y} { set vdd_min_y $y1_dbu }
+            if {$y2_dbu > $vdd_max_y} { set vdd_max_y $y2_dbu }
+            
+            set cy_row [expr {int(($y1_dbu + $y2_dbu) / 2)}]
+            odb::dbSBox_create $sw_vdd $m3 $m3x0 [expr {$cy_row - $hw}] $vddR [expr {$cy_row + $hw}] "STRIPE"
+            odb::dbSBox_create $sw_vdd $colv $xcw $cy_row "STRIPE"
+            odb::dbSBox_create $sw_vdd $colv [expr {($vddL + $vddR) / 2}] $cy_row "STRIPE"
+        }
+
+       # 2. Handle the top-most VDD pad (169.14 to 178.64) at its top edge (matching VSS)
+	    set top_r [lindex $vdd_rows end]
+	    lassign $top_r y1 y2 x2
+	    set y1_dbu [expr {int($y1 * $sc)}]; set y2_dbu [expr {int($y2 * $sc)}]
+	    if {$y1_dbu < $vdd_min_y} { set vdd_min_y $y1_dbu }
+	    if {$y2_dbu > $vdd_max_y} { set vdd_max_y $y2_dbu }
+	    
+	    set cy_top [expr {$y2_dbu - $hw}]
+	    odb::dbSBox_create $sw_vdd $m3 $m3x0 [expr {$cy_top - $hw}] $vddR [expr {$cy_top + $hw}] "STRIPE"
+	    odb::dbSBox_create $sw_vdd $colv $xcw $cy_top "STRIPE"
+	    odb::dbSBox_create $sw_vdd $colv [expr {($vddL + $vddR) / 2}] $cy_top "STRIPE"
+    }
+    odb::dbSBox_create $sw_vdd $m2 0 $vdd_min_y $landx $vdd_max_y "STRIPE"
 }
 
 if {[info commands pdngen] ne "" && [info commands _pg_pdngen_real] eq ""} {

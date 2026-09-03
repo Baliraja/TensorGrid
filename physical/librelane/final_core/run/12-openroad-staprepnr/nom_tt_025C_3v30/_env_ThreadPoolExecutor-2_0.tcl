@@ -55,6 +55,6 @@ set ::env(PDN_ENABLE_GLOBAL_CONNECTIONS) 1
 set ::env(PNR_SDC_FILE) /foss/designs/integration_final/constraints_core.sdc
 set ::env(DEDUPLICATE_CORNERS) 0
 set ::env(STA_MACRO_PRIORITIZE_NL) 1
-set ::env(CURRENT_NL) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/06-yosys-synthesis/A37_A.nl.v
-set ::env(SAVE_SDC) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/12-openroad-staprepnr/A37_A.sdc
+set ::env(CURRENT_NL) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/06-yosys-synthesis/A37_A.nl.v
+set ::env(SAVE_SDC) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/12-openroad-staprepnr/A37_A.sdc
 set ::env(OPENLANE_SDC_IDEAL_CLOCKS) 1

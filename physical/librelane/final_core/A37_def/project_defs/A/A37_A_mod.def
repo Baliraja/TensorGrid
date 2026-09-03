@@ -1,0 +1,104 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN A37_A ;
+UNITS DISTANCE MICRONS 200 ;
+DIEAREA ( 0 0 ) ( 222000 222000 ) ;
+PINS 21 ;
+
+- VSS + NET VSS + DIRECTION INOUT + USE GROUND
+  + LAYER Metal2 ( 0 1272 ) ( 2432 3172 )
+  + LAYER Metal2 ( 0 3752 ) ( 2432 5652 )
+  + LAYER Metal2 ( 0 6122 ) ( 2432 8022 )
+  + LAYER Metal2 ( 0 8828 ) ( 2432 10728 )
+  + LAYER Metal2 ( 0 11198 ) ( 2432 13098 )
+  + LAYER Metal2 ( 0 13828 ) ( 2432 15728 )
+  + FIXED ( 0 0 ) N ;
+
+- VDD + NET VDD + DIRECTION INOUT + USE POWER
+  + LAYER Metal2 ( 0 21272 ) ( 3832 23172 )
+  + LAYER Metal2 ( 0 23752 ) ( 3832 25652 )
+  + LAYER Metal2 ( 0 26222 ) ( 3832 28122 )
+  + LAYER Metal2 ( 0 28828 ) ( 3832 30728 )
+  + LAYER Metal2 ( 0 31198 ) ( 3832 33098 )
+  + LAYER Metal2 ( 0 33828 ) ( 3832 35728 )
+  + FIXED ( 0 0 ) N ;
+
+- i_clk_PU + NET i_clk_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 54731 ) ( 200 54807 )
+  + FIXED ( 0 0 ) N ;
+
+- i_clk_PD + NET i_clk_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 53858 ) ( 200 53934 )
+  + FIXED ( 0 0 ) N ;
+
+- i_clk + NET i_clk + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 41752 ) ( 200 41828 )
+  + FIXED ( 0 0 ) N ;
+
+- i_rst_n_PU + NET i_rst_n_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 74731 ) ( 200 74807 )
+  + FIXED ( 0 0 ) N ;
+
+- i_rst_n_PD + NET i_rst_n_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 73858 ) ( 200 73934 )
+  + FIXED ( 0 0 ) N ;
+
+- i_rst_n + NET i_rst_n + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 61752 ) ( 200 61828 )
+  + FIXED ( 0 0 ) N ;
+
+- i_uart_rx_PU + NET i_uart_rx_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 94731 ) ( 200 94807 )
+  + FIXED ( 0 0 ) N ;
+
+- i_uart_rx_PD + NET i_uart_rx_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 93858 ) ( 200 93934 )
+  + FIXED ( 0 0 ) N ;
+
+- i_uart_rx + NET i_uart_rx + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 81752 ) ( 200 81828 )
+  + FIXED ( 0 0 ) N ;
+
+- o_uart_tx_CS + NET o_uart_tx_CS + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 115252 ) ( 200 115328 )
+  + FIXED ( 0 0 ) N ;
+
+- o_uart_tx_SL + NET o_uart_tx_SL + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 102190 ) ( 200 102266 )
+  + FIXED ( 0 0 ) N ;
+
+- o_uart_tx_IE + NET o_uart_tx_IE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 113647 ) ( 200 113723 )
+  + FIXED ( 0 0 ) N ;
+
+- o_uart_tx_OE + NET o_uart_tx_OE + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 101898 ) ( 200 101974 )
+  + FIXED ( 0 0 ) N ;
+
+- o_uart_tx_PU + NET o_uart_tx_PU + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 114731 ) ( 200 114807 )
+  + FIXED ( 0 0 ) N ;
+
+- o_uart_tx_PD + NET o_uart_tx_PD + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 113858 ) ( 200 113934 )
+  + FIXED ( 0 0 ) N ;
+
+- o_uart_tx_OUT + NET o_uart_tx_OUT + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 102044 ) ( 200 102120 )
+  + FIXED ( 0 0 ) N ;
+
+- o_uart_tx_PDRV0 + NET o_uart_tx_PDRV0 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 114502 ) ( 200 114578 )
+  + FIXED ( 0 0 ) N ;
+
+- o_uart_tx_PDRV1 + NET o_uart_tx_PDRV1 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 114360 ) ( 200 114436 )
+  + FIXED ( 0 0 ) N ;
+
+- o_uart_tx_IN + NET o_uart_tx_IN + DIRECTION INPUT + USE SIGNAL
+  + LAYER Metal2 ( 0 101752 ) ( 200 101828 )
+  + FIXED ( 0 0 ) N ;
+
+END PINS
+END DESIGN

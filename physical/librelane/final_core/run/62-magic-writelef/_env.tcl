@@ -63,7 +63,7 @@ set ::env(MAGIC_CAPTURE_ERRORS) 1
 set ::env(MAGIC_LEF_WRITE_USE_GDS) 0
 set ::env(MAGIC_WRITE_FULL_LEF) 0
 set ::env(MAGIC_WRITE_LEF_PINONLY) 0
-set ::env(CURRENT_GDS) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/60-klayout-streamout/A37_A.gds
-set ::env(CURRENT_DEF) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/55-odb-cellfrequencytables/A37_A.def
-set ::env(SAVE_LEF) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/62-magic-writelef/A37_A.lef
+set ::env(CURRENT_GDS) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/60-klayout-streamout/A37_A.gds
+set ::env(CURRENT_DEF) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/55-odb-cellfrequencytables/A37_A.def
+set ::env(SAVE_LEF) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/62-magic-writelef/A37_A.lef
 set ::env(MACRO_GDS_FILES) ""

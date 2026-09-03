@@ -8,7 +8,7 @@
 
 1. Executing Liberty frontend: /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib
 Imported 229 cell types from liberty file.
-[INFO] Using SDC file '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/06-yosys-synthesis/synthesis.abc.sdc' for ABC…wtaf
+[INFO] Using SDC file '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/06-yosys-synthesis/synthesis.abc.sdc' for ABC…wtaf
 
 2. Executing Verilog-2005 frontend: /foss/designs/integration_final/src/command_parser.sv
 Parsing SystemVerilog input from `/foss/designs/integration_final/src/command_parser.sv' to AST representation.
@@ -5865,7 +5865,7 @@ Removed 19 unused cells and 159 unused wires.
 <suppressed ~178 debug messages>
 {
    "creator": "Yosys 0.64 (git sha1 6d2c445ae, g++ 13.3.0-6ubuntu2~24.04.1 -fPIC -O3)",
-   "invocation": "stat -json -liberty /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/tmp/fc7000e98b6346ffa898c597b4fc78ff.lib ",
+   "invocation": "stat -json -liberty /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/tmp/1951fe003dd641fda5dcf7f07ff34508.lib ",
    "modules": {
       "\\A37_A": {
          "num_wires":         22698,
@@ -6023,7 +6023,7 @@ Mapping DFF cells in module `\A37_A':
   mapped 38 $_DFF_P_ cells to \gf180mcu_fd_sc_mcu7t5v0__dffq_1 cells.
 {
    "creator": "Yosys 0.64 (git sha1 6d2c445ae, g++ 13.3.0-6ubuntu2~24.04.1 -fPIC -O3)",
-   "invocation": "stat -json -liberty /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/tmp/fc7000e98b6346ffa898c597b4fc78ff.lib ",
+   "invocation": "stat -json -liberty /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/tmp/1951fe003dd641fda5dcf7f07ff34508.lib ",
    "modules": {
       "\\A37_A": {
          "num_wires":         24148,
@@ -6130,21 +6130,21 @@ Mapping DFF cells in module `\A37_A':
    Chip area for module '\A37_A': 95956.582400
      of which used for sequential elements: 95956.582400 (100.00%)
 
-[INFO] Using generated ABC script '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/06-yosys-synthesis/AREA_0.abc'…
+[INFO] Using generated ABC script '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/06-yosys-synthesis/AREA_0.abc'…
 
 155. Executing ABC pass (technology mapping using ABC).
 
-155.1. Extracting gate netlist of module `\A37_A' to `/tmp/yosys-abc-OWLgCr/input.blif'..
+155.1. Extracting gate netlist of module `\A37_A' to `/tmp/yosys-abc-okuLUM/input.blif'..
 
 155.1.1. Executed ABC.
 Extracted 24331 gates and 25595 wires to a netlist network with 1263 inputs and 1609 outputs.
-Running ABC script: /tmp/yosys-abc-OWLgCr/abc.script
+Running ABC script: /tmp/yosys-abc-okuLUM/abc.script
 ABC: UC Berkeley, ABC 1.01 (compiled Apr 16 2026 21:01:18)
 ABC: abc 01> empty
-ABC: abc 01> source /tmp/yosys-abc-OWLgCr/abc.script
-ABC: + read_blif /tmp/yosys-abc-OWLgCr/input.blif 
-ABC: + read_lib -w /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/tmp/fc7000e98b6346ffa898c597b4fc78ff.lib 
-ABC: Parsing finished successfully.  Parsing time =     0.12 sec
+ABC: abc 01> source /tmp/yosys-abc-okuLUM/abc.script
+ABC: + read_blif /tmp/yosys-abc-okuLUM/input.blif 
+ABC: + read_lib -w /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/tmp/1951fe003dd641fda5dcf7f07ff34508.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.11 sec
 ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__antenna" without logic function.
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__bufz_1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__bufz_2".
@@ -6217,13 +6217,13 @@ ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__l
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latsnq_1".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latsnq_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latsnq_4".
-ABC: Library "gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30" from "/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/tmp/fc7000e98b6346ffa898c597b4fc78ff.lib" has 143 cells (72 skipped: 36 seq; 15 tri-state; 21 no func; 0 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.16 sec
+ABC: Library "gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30" from "/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/tmp/1951fe003dd641fda5dcf7f07ff34508.lib" has 143 cells (72 skipped: 36 seq; 15 tri-state; 21 no func; 0 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.16 sec
 ABC: Memory =   23.81 MB. Time =     0.16 sec
 ABC: Warning: Detected 6 multi-output cells (for example, "gf180mcu_fd_sc_mcu7t5v0__addf_1").
-ABC: + read_constr -v /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: + read_constr -v /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/06-yosys-synthesis/synthesis.abc.sdc 
 ABC: Setting driving cell to be "gf180mcu_fd_sc_mcu7t5v0__inv_1/ZN".
 ABC: Setting output load to be 72.910004.
-ABC: + source /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/06-yosys-synthesis/AREA_0.abc 
+ABC: + source /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/06-yosys-synthesis/AREA_0.abc 
 ABC: Fanins of node 18418: Vector has 2 entries: { 18153 18153 }
 ABC: Abc_NtkFastExtract: Nodes have duplicated fanins. FX is not performed.
 ABC: Error: The network is combinational.
@@ -6241,7 +6241,7 @@ ABC: Path  8 --    3155 : 1   67 gf180mcu_fd_sc_mcu7t5v0__clkinv_1 A =   8.78  D
 ABC: Path  9 --    4098 : 3    1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1  A =  17.56  Df =66581.5-2148.0 ps  S =4787.5 ps  Cin =  4.4 ff  Cout =  72.9 ff  Cmax = 181.5 ff  G = 1642  
 ABC: Start-point = pi987 (\u_integration_final.integration_inst.reg_bank_inst.current_state [0]).  End-point = po6 ($auto$rtlil.cc:3501:MuxGate$112561).
 ABC: netlist                       : i/o = 1263/ 1609  lat =    0  nd = 17638  edge =  44928  area =318409.87  delay =45.00  lev = 45
-ABC: + write_blif /tmp/yosys-abc-OWLgCr/output.blif 
+ABC: + write_blif /tmp/yosys-abc-okuLUM/output.blif 
 ABC:                                                                                
 ABC: YOSYS_ABC_DONE 
 
@@ -6302,7 +6302,7 @@ Checking module A37_A...
 Found and reported 0 problems.
 {
    "creator": "Yosys 0.64 (git sha1 6d2c445ae, g++ 13.3.0-6ubuntu2~24.04.1 -fPIC -O3)",
-   "invocation": "stat -json -liberty /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/tmp/fc7000e98b6346ffa898c597b4fc78ff.lib ",
+   "invocation": "stat -json -liberty /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/tmp/1951fe003dd641fda5dcf7f07ff34508.lib ",
    "modules": {
       "\\A37_A": {
          "num_wires":         18946,

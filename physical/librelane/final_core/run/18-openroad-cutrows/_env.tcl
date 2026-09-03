@@ -56,6 +56,6 @@ set ::env(PNR_SDC_FILE) /foss/designs/integration_final/constraints_core.sdc
 set ::env(DEDUPLICATE_CORNERS) 0
 set ::env(FP_MACRO_HORIZONTAL_HALO) 10
 set ::env(FP_MACRO_VERTICAL_HALO) 10
-set ::env(CURRENT_ODB) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/16-odb-setpowerconnections/A37_A.odb
-set ::env(SAVE_ODB) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/18-openroad-cutrows/A37_A.odb
-set ::env(SAVE_DEF) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/18-openroad-cutrows/A37_A.def
+set ::env(CURRENT_ODB) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/16-odb-setpowerconnections/A37_A.odb
+set ::env(SAVE_ODB) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/18-openroad-cutrows/A37_A.odb
+set ::env(SAVE_DEF) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/18-openroad-cutrows/A37_A.def

@@ -295,21 +295,21 @@ Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3".
 Cell (REFRESHLAYOUT?) couldn't be read
 No such file or directory
 Creating new cell
-> def read /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/55-odb-cellfrequencytables/A37_A.def -noblockage
-Reading DEF data from file /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/55-odb-cellfrequencytables/A37_A.def.
+> def read /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/55-odb-cellfrequencytables/A37_A.def -noblockage
+Reading DEF data from file /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/55-odb-cellfrequencytables/A37_A.def.
 This action cannot be undone.
   Processed 17 vias total.
   Processed 1 non-default rules total.
-  Processed 72320 subcell instances total.
-DEF read, Line 72751 (Warning): Number of pins read (31) does not match the number declared (21).
+  Processed 72291 subcell instances total.
+DEF read, Line 72722 (Warning): Number of pins read (31) does not match the number declared (21).
   Processed 2 special nets total.
-  Processed 23742 nets total.
-DEF read: Processed 453842 lines.
+  Processed 23693 nets total.
+DEF read: Processed 453361 lines.
 DEF Read: encountered 1 warning total.
 [INFO] Ignoring 'VDD VSS'
 [INFO] Writing abstract LEF…
 [INFO] Not specifiying -pinonly (nets connected to pins on the same layer are declared as part of the pin)…
-Generating LEF output /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/62-magic-writelef/A37_A.lef for cell A37_A:
+Generating LEF output /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/62-magic-writelef/A37_A.lef for cell A37_A:
 Diagnostic:  Write LEF header for cell A37_A
 Diagnostic:  Writing LEF output for cell A37_A
 Diagnostic:  Scale value is 0.005000

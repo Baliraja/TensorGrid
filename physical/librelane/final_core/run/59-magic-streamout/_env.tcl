@@ -63,9 +63,9 @@ set ::env(MAGIC_CAPTURE_ERRORS) 1
 set ::env(MAGIC_ZEROIZE_ORIGIN) 0
 set ::env(MAGIC_DISABLE_CIF_INFO) 1
 set ::env(MAGIC_MACRO_STD_CELL_SOURCE) macro
-set ::env(CURRENT_DEF) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/55-odb-cellfrequencytables/A37_A.def
-set ::env(SAVE_GDS) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/59-magic-streamout/A37_A.gds
-set ::env(SAVE_MAG_GDS) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/59-magic-streamout/A37_A.magic.gds
-set ::env(SAVE_MAG) /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/59-magic-streamout/A37_A.mag
+set ::env(CURRENT_DEF) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/55-odb-cellfrequencytables/A37_A.def
+set ::env(SAVE_GDS) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/59-magic-streamout/A37_A.gds
+set ::env(SAVE_MAG_GDS) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/59-magic-streamout/A37_A.magic.gds
+set ::env(SAVE_MAG) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/59-magic-streamout/A37_A.mag
 set ::env(MACRO_GDS_FILES) ""
 set ::env(MAGTYPE) mag

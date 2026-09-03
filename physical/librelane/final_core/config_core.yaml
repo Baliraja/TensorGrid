@@ -77,7 +77,6 @@ LIB:
   max_ss_125C_3v00:
     - "/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib"
 
-
 # Yosys synthesis options
 MAX_FANOUT_CONSTRAINT: 10
 SYNTH_STRATEGY: "AREA 0"
@@ -110,7 +109,7 @@ MAX_CAPACITANCE_CONSTRAINT: 0.1
 
 # Fix antenna violations after DRT
 DRT_ANTENNA_REPAIR_ITERS: 10
-DRT_ANTENNA_REPAIR_MARGIN: 10 # %
+DRT_ANTENNA_REPAIR_MARGIN: 10
 
 
 # Max routing layer
@@ -132,11 +131,11 @@ RT_CLOCK_MAX_LAYER: Metal3
 PDN_VWIDTH: 5 #1.6
 PDN_HWIDTH: 5 #1.6
 PDN_VSPACING: 5
-PDN_HSPACING: 5
+PDN_HSPACING: 7
 PDN_VPITCH: 98 # integer multiple of std cell height
 PDN_HPITCH: 98 # integer multiple of std cell height
 PDN_VOFFSET: 53.56
-PDN_HOFFSET: 41.82
+PDN_HOFFSET: 40.82
 
 
 # PDN - Ring
@@ -192,4 +191,3 @@ KLAYOUT_DRC_OPTIONS:
   decks: "all,-antenna,-density,-cup"
   variant: ref::$PDK
   workers: max
-

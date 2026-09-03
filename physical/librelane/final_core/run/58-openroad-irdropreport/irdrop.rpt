@@ -1,26 +1,26 @@
-+ analyze_power_grid -net VDD -voltage_file /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/58-openroad-irdropreport/net-VDD.csv
++ analyze_power_grid -net VDD -voltage_file /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/58-openroad-irdropreport/net-VDD.csv
 [INFO PSM-0040] All shapes on net VDD are connected.
 ########## IR report #################
 Net              : VDD
 Corner           : nom_tt_025C_3v30
-Total power      : 5.56e-03 W
+Total power      : 5.49e-03 W
 Supply voltage   : 3.30e+00 V
-Worstcase voltage: 3.29e+00 V
+Worstcase voltage: 3.30e+00 V
 Average voltage  : 3.30e+00 V
-Average IR drop  : 4.88e-03 V
-Worstcase IR drop: 5.32e-03 V
-Percentage drop  : 0.16 %
+Average IR drop  : 2.12e-03 V
+Worstcase IR drop: 2.52e-03 V
+Percentage drop  : 0.08 %
 ######################################
-+ analyze_power_grid -net VSS -voltage_file /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/58-openroad-irdropreport/net-VSS.csv
++ analyze_power_grid -net VSS -voltage_file /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/58-openroad-irdropreport/net-VSS.csv
 [INFO PSM-0040] All shapes on net VSS are connected.
 ########## IR report #################
 Net              : VSS
 Corner           : nom_tt_025C_3v30
-Total power      : 5.56e-03 W
+Total power      : 5.49e-03 W
 Supply voltage   : 0.00e+00 V
-Worstcase voltage: 4.51e-03 V
-Average voltage  : 4.08e-03 V
-Average IR drop  : 4.08e-03 V
-Worstcase IR drop: 4.51e-03 V
-Percentage drop  : 0.14 %
+Worstcase voltage: 2.68e-03 V
+Average voltage  : 2.26e-03 V
+Average IR drop  : 2.26e-03 V
+Worstcase IR drop: 2.68e-03 V
+Percentage drop  : 0.08 %
 ######################################

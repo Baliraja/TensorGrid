@@ -1,7 +1,7 @@
-set circuit1 [readnet spice /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/70-magic-spiceextraction/A37_A.spice]
+set circuit1 [readnet spice /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/70-magic-spiceextraction/A37_A.spice]
 set circuit2 [readnet verilog /dev/null]
 puts "Reading SPICE netlist file '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice'..."
 readnet spice /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice $circuit2
-puts "Reading Verilog netlist file '/foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/54-openroad-fillinsertion/A37_A.pnl.v'..."
-readnet verilog /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/54-openroad-fillinsertion/A37_A.pnl.v $circuit2
-lvs "$circuit1 A37_A" "$circuit2 A37_A" /usr/local/lib/python3.12/dist-packages/librelane/scripts/netgen/setup.tcl /foss/designs/integration_final/runs/RUN_2026-08-30_15-35-49/72-netgen-lvs/reports/lvs.netgen.rpt -blackbox -json
+puts "Reading Verilog netlist file '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/54-openroad-fillinsertion/A37_A.pnl.v'..."
+readnet verilog /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/54-openroad-fillinsertion/A37_A.pnl.v $circuit2
+lvs "$circuit1 A37_A" "$circuit2 A37_A" /usr/local/lib/python3.12/dist-packages/librelane/scripts/netgen/setup.tcl /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/72-netgen-lvs/reports/lvs.netgen.rpt -blackbox -json
