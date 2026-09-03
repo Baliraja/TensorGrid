@@ -1,6 +1,6 @@
 {
    "creator": "Yosys 0.64 (git sha1 6d2c445ae, g++ 13.3.0-6ubuntu2~24.04.1 -fPIC -O3)",
-   "invocation": "stat -json -liberty /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/tmp/1951fe003dd641fda5dcf7f07ff34508.lib ",
+   "invocation": "stat -json -liberty /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/tmp/510fda776d564ac5b1cdb00d36c01cba.lib ",
    "modules": {
       "\\A37_A": {
          "num_wires":         22698,

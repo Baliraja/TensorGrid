@@ -1,6 +1,6 @@
 Reading timing models for corner nom_tt_025C_3v30…
 Reading timing library for the 'nom_tt_025C_3v30' corner at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib'…
-Reading OpenROAD database at '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/37-openroad-resizertimingpostcts/A37_A.odb'…
+Reading OpenROAD database at '/foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/37-openroad-resizertimingpostcts/A37_A.odb'…
 Reading design constraints file at '/foss/designs/integration_final/constraints_core.sdc'…
 [INFO] No information on clock propagation in input SDC file-- propagating all clocks.
 [INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
@@ -26,8 +26,8 @@ Reading design constraints file at '/foss/designs/integration_final/constraints_
 Layer     Direction    Resources     Resources    Reduction (%)
 ---------------------------------------------------------------
 Metal1     Horizontal          0             0          0.00%
-Metal2     Vertical       229074        151466          33.88%
-Metal3     Horizontal     249003        165244          33.64%
+Metal2     Vertical       229056        151448          33.88%
+Metal3     Horizontal     248963        165216          33.64%
 Metal4     Vertical       232755        154928          33.44%
 Metal5     Horizontal     143533         96316          32.90%
 ---------------------------------------------------------------
@@ -46,12 +46,12 @@ Metal5     Horizontal     143533         96316          32.90%
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 Metal1               0             0            0.00%             0 /  0 /  0
-Metal2          151466         63310           41.80%             0 /  0 /  0
-Metal3          165244         64198           38.85%             0 /  0 /  0
+Metal2          151448         63310           41.80%             0 /  0 /  0
+Metal3          165216         64198           38.86%             0 /  0 /  0
 Metal4          154928         13506            8.72%             0 /  0 /  0
 Metal5           96316          7373            7.66%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total           567954        148387           26.13%             0 /  0 /  0
+Total           567908        148387           26.13%             0 /  0 /  0
 
 [INFO GRT-0018] Total wirelength: 1762748 um
 [INFO GRT-0014] Routed nets: 23023
@@ -71,5 +71,5 @@ Cell type report:                       Count       Area
   Sequential cell                        1291   96878.57
   Multi-Input combinational cell        16560  319019.64
   Total                                 30775  540796.30
-Writing OpenROAD database to '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/39-openroad-globalrouting/A37_A.odb'…
-Writing layout to '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/39-openroad-globalrouting/A37_A.def'…
+Writing OpenROAD database to '/foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/39-openroad-globalrouting/A37_A.odb'…
+Writing layout to '/foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/39-openroad-globalrouting/A37_A.def'…
