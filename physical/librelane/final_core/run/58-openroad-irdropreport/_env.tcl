@@ -1,5 +1,5 @@
 set ::env(LIB_VOLTAGE) 3.3
-set ::env(CURRENT_SPEF_DEFAULT_CORNER) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/56-openroad-rcx/nom/A37_A.nom.spef
+set ::env(CURRENT_SPEF_DEFAULT_CORNER) /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/56-openroad-rcx/nom/A37_A.nom.spef
 set ::env(STEP_ID) OpenROAD.IRDropReport
 set ::env(TECH_LEF) /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__nom.tlef
 set ::env(MACRO_LEFS) ""
@@ -56,5 +56,5 @@ set ::env(PDN_CONNECT_MACROS_TO_GRID) 1
 set ::env(PDN_ENABLE_GLOBAL_CONNECTIONS) 1
 set ::env(PNR_SDC_FILE) /foss/designs/integration_final/constraints_core.sdc
 set ::env(DEDUPLICATE_CORNERS) 0
-set ::env(CURRENT_ODB) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/55-odb-cellfrequencytables/A37_A.odb
-set ::env(CURRENT_SPEF) "\"nom_*\" /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/56-openroad-rcx/nom/A37_A.nom.spef \"min_*\" /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/56-openroad-rcx/min/A37_A.min.spef \"max_*\" /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/56-openroad-rcx/max/A37_A.max.spef"
+set ::env(CURRENT_ODB) /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/55-odb-cellfrequencytables/A37_A.odb
+set ::env(CURRENT_SPEF) "\"nom_*\" /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/56-openroad-rcx/nom/A37_A.nom.spef \"min_*\" /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/56-openroad-rcx/min/A37_A.min.spef \"max_*\" /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/56-openroad-rcx/max/A37_A.max.spef"

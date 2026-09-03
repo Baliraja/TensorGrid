@@ -1,5 +1,6 @@
-+ analyze_power_grid -net VDD -voltage_file /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/58-openroad-irdropreport/net-VDD.csv
++ analyze_power_grid -net VDD -voltage_file /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/58-openroad-irdropreport/net-VDD.csv
 [INFO PSM-0040] All shapes on net VDD are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
 ########## IR report #################
 Net              : VDD
 Corner           : nom_tt_025C_3v30
@@ -7,20 +8,21 @@ Total power      : 5.49e-03 W
 Supply voltage   : 3.30e+00 V
 Worstcase voltage: 3.30e+00 V
 Average voltage  : 3.30e+00 V
-Average IR drop  : 2.12e-03 V
-Worstcase IR drop: 2.52e-03 V
-Percentage drop  : 0.08 %
+Average IR drop  : 2.42e-05 V
+Worstcase IR drop: 7.22e-05 V
+Percentage drop  : 0.00 %
 ######################################
-+ analyze_power_grid -net VSS -voltage_file /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/58-openroad-irdropreport/net-VSS.csv
++ analyze_power_grid -net VSS -voltage_file /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/58-openroad-irdropreport/net-VSS.csv
 [INFO PSM-0040] All shapes on net VSS are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
 ########## IR report #################
 Net              : VSS
 Corner           : nom_tt_025C_3v30
 Total power      : 5.49e-03 W
 Supply voltage   : 0.00e+00 V
-Worstcase voltage: 2.68e-03 V
-Average voltage  : 2.26e-03 V
-Average IR drop  : 2.26e-03 V
-Worstcase IR drop: 2.68e-03 V
-Percentage drop  : 0.08 %
+Worstcase voltage: 6.51e-05 V
+Average voltage  : 2.38e-05 V
+Average IR drop  : 2.38e-05 V
+Worstcase IR drop: 6.51e-05 V
+Percentage drop  : 0.00 %
 ######################################

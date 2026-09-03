@@ -1,1 +1,1 @@
-openroad -exit -no_splash -metrics /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/18-openroad-cutrows/or_metrics_out.json /usr/local/lib/python3.12/dist-packages/librelane/scripts/openroad/cut_rows.tcl
+openroad -exit -no_splash -metrics /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/18-openroad-cutrows/or_metrics_out.json /usr/local/lib/python3.12/dist-packages/librelane/scripts/openroad/cut_rows.tcl

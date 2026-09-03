@@ -10,13 +10,13 @@ Reading cell LEF file at '/foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/
 The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef at line 2.
 
 [INFO ODB-0227] LEF file: /foss/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef, created 229 library cells
-[INFO ODB-0127] Reading DEF file: /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/55-odb-cellfrequencytables/A37_A.def
+[INFO ODB-0127] Reading DEF file: /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/55-odb-cellfrequencytables/A37_A.def
 [INFO ODB-0128] Design: A37_A
 [INFO ODB-0130]     Created 21 pins.
 [INFO ODB-0131]     Created 72291 components and 351211 component-terminals.
 [INFO ODB-0132]     Created 2 special nets and 273832 connections.
 [INFO ODB-0133]     Created 23693 nets and 77289 connections.
-[INFO ODB-0134] Finished DEF file: /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/55-odb-cellfrequencytables/A37_A.def
+[INFO ODB-0134] Finished DEF file: /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/55-odb-cellfrequencytables/A37_A.def
 Using RCX ruleset '/foss/pdks/gf180mcuD/libs.tech/librelane/rules.openrcx.gf180mcuD.max'…
 [INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
 [INFO RCX-0029] Defined extraction corner CURRENT_CORNER
@@ -40,5 +40,5 @@ Cell type report:                       Count       Area
   Tie cell                                 13     114.15
   Standard cell                         23766  522418.09
   Total                                 72291 1098385.88
-Writing extracted parasitics to '/foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/56-openroad-rcx/max/A37_A.max.spef'…
+Writing extracted parasitics to '/foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/56-openroad-rcx/max/A37_A.max.spef'…
 [INFO RCX-0443] 23693 nets finished

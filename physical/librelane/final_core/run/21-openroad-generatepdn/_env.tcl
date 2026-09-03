@@ -86,9 +86,9 @@ set ::env(PDN_CORE_VERTICAL_LAYER) Metal2
 set ::env(PDN_EXTEND_TO) core_ring
 set ::env(PDN_ENABLE_PINS) 0
 set ::env(PDN_CFG) /foss/designs/integration_final/pdn_core_cfg.tcl
-set ::env(CURRENT_ODB) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/19-openroad-tapendcapinsertion/A37_A.odb
-set ::env(SAVE_ODB) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/21-openroad-generatepdn/A37_A.odb
-set ::env(SAVE_DEF) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/21-openroad-generatepdn/A37_A.def
-set ::env(SAVE_SDC) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/21-openroad-generatepdn/A37_A.sdc
-set ::env(SAVE_NL) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/21-openroad-generatepdn/A37_A.nl.v
-set ::env(SAVE_PNL) /foss/designs/integration_final/runs/RUN_2026-09-03_11-08-35/21-openroad-generatepdn/A37_A.pnl.v
+set ::env(CURRENT_ODB) /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/19-openroad-tapendcapinsertion/A37_A.odb
+set ::env(SAVE_ODB) /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/21-openroad-generatepdn/A37_A.odb
+set ::env(SAVE_DEF) /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/21-openroad-generatepdn/A37_A.def
+set ::env(SAVE_SDC) /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/21-openroad-generatepdn/A37_A.sdc
+set ::env(SAVE_NL) /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/21-openroad-generatepdn/A37_A.nl.v
+set ::env(SAVE_PNL) /foss/designs/integration_final/runs/RUN_2026-09-03_14-22-02/21-openroad-generatepdn/A37_A.pnl.v
