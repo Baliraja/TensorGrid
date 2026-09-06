@@ -21,7 +21,7 @@
     ""
   ],
   "LVS_SPICE_FILES": [
-    "$UPRJ_ROOT/physical/librelane/final_core/run/final/spice/$TOP_SOURCE.spice"
+    ""
   ],
   "LVS_VERILOG_FILES": [
     "$UPRJ_ROOT/physical/librelane/final_core/run/final/pnl/$TOP_SOURCE.pnl.v"
