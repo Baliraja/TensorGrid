@@ -30,6 +30,12 @@ project:
 
   lvs_config: "lvs_config.json" 
 
+  gf_def_ready: True
+
+  drc_ready: True
+
+  lvs_ready: True
+
 pins:
   - name: VSS
     io_type: ground
