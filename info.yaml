@@ -30,11 +30,13 @@ project:
 
   lvs_config: "lvs_config.json" 
 
-  gf_def_ready: True
+  gf_def_ready: true
 
-  drc_ready: True
+  ws_def_ready: true
 
-  lvs_ready: True
+  drc_ready: true
+
+  lvs_ready: true
 
 pins:
   - name: VSS
