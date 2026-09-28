@@ -32,7 +32,7 @@ project:
 
   gf_def_ready: true
 
-  ws_def_ready: true
+  ws_def_ready: false
 
   drc_ready: true
 
