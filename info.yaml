@@ -42,9 +42,6 @@ pins:
   - name: VSS
     io_type: ground
     
-  - name: VDD
-    io_type: power
-    
   - name: i_clk
     io_type: input_cmos
    
@@ -56,6 +53,9 @@ pins:
 
   - name: o_uart_tx
     io_type: bidirectional
+
+  - name: VDD
+    io_type: power
 
   #- name: VDDB
   #  io_type: power
