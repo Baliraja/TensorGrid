@@ -38,6 +38,8 @@ project:
 
   lvs_ready: true
 
+  export_control: "documents/Export_Control_GF_Rev8.2.docx" 
+
 pins:
   - name: VSS
     io_type: ground
